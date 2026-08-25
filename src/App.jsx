@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -9,6 +10,8 @@ function App() {
                 <h1>Smart Parking</h1>
                 <p>Find your perfect parking spot.</p>
             </main>
+
+            <Footer />
         </>
     );
 }
