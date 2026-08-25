@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, Search, Heart, Moon } from "lucide-react";
+import "./../css/Navbar.css";
 
 function Navbar() {
     return (
