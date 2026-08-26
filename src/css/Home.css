@@ -512,4 +512,111 @@
     min-height: 450px;
   }
 }
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .hero-section {
+    min-height: auto;
+
+    padding: 60px 20px 70px;
+
+    gap: 35px;
+  }
+
+  .hero-content h1 {
+    font-size: 46px;
+
+    letter-spacing: -2px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .hero-primary-btn,
+  .hero-secondary-btn {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .hero-stats {
+    gap: 22px;
+  }
+
+  .hero-stat strong {
+    font-size: 20px;
+  }
+
+  .hero-stat span {
+    font-size: 10px;
+  }
+
+  .hero-visual {
+    min-height: 400px;
+  }
+
+  .parking-card {
+    width: 100%;
+
+    padding: 18px;
+
+    border-radius: 22px;
+  }
+
+  .parking-slot {
+    height: 65px;
+  }
+
+  .floating-card {
+    padding: 10px 12px;
+  }
+
+  .floating-card-one {
+    top: 20px;
+    right: -5px;
+  }
+
+  .floating-card-two {
+    bottom: 20px;
+    left: -5px;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 400px) {
+
+  .hero-content h1 {
+    font-size: 39px;
+  }
+
+  .hero-stats {
+    gap: 14px;
+  }
+
+  .parking-visual {
+    gap: 8px;
+  }
+
+  .parking-slot {
+    height: 55px;
+  }
+
+  .floating-card {
+    transform: scale(0.9);
+  }
+}
 
