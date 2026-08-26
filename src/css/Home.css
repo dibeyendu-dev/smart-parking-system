@@ -481,5 +481,35 @@
     transform: translateY(10px);
   }
 }
+/* ======================================== TABLET ======================================== */
 
+@media (max-width: 1000px) {
+
+  .hero-section {
+    grid-template-columns: 1fr;
+
+    padding: 75px 6%;
+
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 750px;
+    margin: auto;
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons,
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    min-height: 450px;
+  }
+}
 
