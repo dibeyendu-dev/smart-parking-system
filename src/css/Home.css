@@ -243,3 +243,16 @@
 
   font-size: 12px;
 }
+/* ======================================== HERO VISUAL ======================================== */
+
+.hero-visual {
+  position: relative;
+
+  min-height: 480px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
