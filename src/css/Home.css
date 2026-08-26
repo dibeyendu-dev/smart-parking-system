@@ -366,5 +366,24 @@
 
   border: 1px solid rgba(239, 68, 68, 0.15);
 }
+/* ======================================== CARD FOOTER ======================================== */
+
+.parking-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 22px;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+.parking-card-footer strong {
+  color: #7c3aed;
+
+  font-size: 18px;
+}
 
 
