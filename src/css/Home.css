@@ -311,6 +311,60 @@
 
   font-size: 12px;
 }
+/* ======================================== PARKING SLOTS ======================================== */
 
+.parking-visual {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+
+  padding: 15px;
+
+  background: rgba(241, 245, 249, 0.65);
+
+  border-radius: 18px;
+}
+
+.parking-slot {
+  height: 85px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  transition: all 0.3s ease;
+}
+
+.parking-slot:hover {
+  transform: scale(1.05);
+}
+
+
+/* Available */
+
+.parking-slot.available {
+  color: #047857;
+
+  background: rgba(167, 243, 208, 0.55);
+
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+
+/* Occupied */
+
+.parking-slot.occupied {
+  color: #b91c1c;
+
+  background: rgba(254, 202, 202, 0.55);
+
+  border: 1px solid rgba(239, 68, 68, 0.15);
+}
 
 
