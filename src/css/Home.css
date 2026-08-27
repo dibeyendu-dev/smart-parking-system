@@ -1110,3 +1110,67 @@
 
   font-size: 12px;
 }
+
+/* ======================================== PARKING DETAILS ======================================== */
+
+.parking-details {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 17px;
+}
+
+.parking-details span {
+  padding: 7px 9px;
+
+  color: #64748b;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 8px;
+
+  font-size: 10px;
+}
+
+
+/* ======================================== PARKING BOTTOM ======================================== */
+
+.parking-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  margin-top: 22px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #eef2f7;
+}
+
+.parking-bottom div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.parking-bottom small {
+  color: #94a3b8;
+
+  font-size: 10px;
+}
+
+.parking-bottom strong {
+  color: #7c3aed;
+
+  font-size: 20px;
+}
+
+.parking-bottom strong span {
+  color: #94a3b8;
+
+  font-size: 11px;
+  font-weight: 500;
+}
