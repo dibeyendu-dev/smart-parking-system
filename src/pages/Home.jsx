@@ -201,6 +201,192 @@ function Home() {
         </div>
 
       </section>
+      {/* ================= FEATURED PARKING ================= */}
+      <section className="featured-parking-section">
+
+        <div className="section-heading">
+
+          <span>✦ Popular Parking</span>
+
+          <h2>
+            Featured <strong>Parking Spots</strong>
+          </h2>
+
+          <p>
+            Explore popular parking areas with
+            convenient locations and affordable rates.
+          </p>
+
+        </div>
+
+
+        <div className="parking-cards">
+
+          {/* Parking Card 1 */}
+          <div className="parking-card-item">
+
+            <div className="parking-image">
+              <span className="parking-status">
+                ● Available
+              </span>
+
+              <span className="parking-icon">
+                🚗
+              </span>
+            </div>
+
+            <div className="parking-info">
+
+              <div className="parking-title">
+                <h3>City Center Parking</h3>
+                <span>⭐ 4.8</span>
+              </div>
+
+              <p className="parking-location">
+                📍 Central Avenue, Kolkata
+              </p>
+
+              <div className="parking-details">
+                <span>🅿️ 24 Slots</span>
+                <span>🚗 Car & Bike</span>
+              </div>
+
+              <div className="parking-bottom">
+
+                <div>
+                  <small>Starting from</small>
+                  <strong>₹40<span>/hr</span></strong>
+                </div>
+
+                <Link
+                  to="/search"
+                  className="view-parking-btn"
+                >
+                  View Parking
+                </Link>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          {/* Parking Card 2 */}
+          <div className="parking-card-item">
+
+            <div className="parking-image">
+              <span className="parking-status">
+                ● Available
+              </span>
+
+              <span className="parking-icon">
+                🏢
+              </span>
+            </div>
+
+            <div className="parking-info">
+
+              <div className="parking-title">
+                <h3>Metro Station Parking</h3>
+                <span>⭐ 4.7</span>
+              </div>
+
+              <p className="parking-location">
+                📍 Park Street, Kolkata
+              </p>
+
+              <div className="parking-details">
+                <span>🅿️ 18 Slots</span>
+                <span>🚗 Car & Bike</span>
+              </div>
+
+              <div className="parking-bottom">
+
+                <div>
+                  <small>Starting from</small>
+                  <strong>₹30<span>/hr</span></strong>
+                </div>
+
+                <Link
+                  to="/search"
+                  className="view-parking-btn"
+                >
+                  View Parking
+                </Link>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          {/* Parking Card 3 */}
+          <div className="parking-card-item">
+
+            <div className="parking-image">
+              <span className="parking-status">
+                ● Available
+              </span>
+
+              <span className="parking-icon">
+                🏬
+              </span>
+            </div>
+
+            <div className="parking-info">
+
+              <div className="parking-title">
+                <h3>Mall Parking Zone</h3>
+                <span>⭐ 4.9</span>
+              </div>
+
+              <p className="parking-location">
+                📍 Salt Lake, Kolkata
+              </p>
+
+              <div className="parking-details">
+                <span>🅿️ 32 Slots</span>
+                <span>🚗 All Vehicles</span>
+              </div>
+
+              <div className="parking-bottom">
+
+                <div>
+                  <small>Starting from</small>
+                  <strong>₹50<span>/hr</span></strong>
+                </div>
+
+                <Link
+                  to="/search"
+                  className="view-parking-btn"
+                >
+                  View Parking
+                </Link>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        {/* View All */}
+        <div className="featured-action">
+
+          <Link
+            to="/search"
+            className="view-all-parking"
+          >
+            View All Parking →
+          </Link>
+
+        </div>
+
+      </section>
 
     </main>
   );
