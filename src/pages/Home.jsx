@@ -125,6 +125,82 @@ function Home() {
         </div>
 
       </section>
+      {/* ================= PARKING SEARCH ================= */}
+      <section className="parking-search-section">
+
+        <div className="section-heading">
+          <span>✦ Find Your Spot</span>
+
+          <h2>
+            Find Parking That
+            <strong> Fits You</strong>
+          </h2>
+
+          <p>
+            Search for available parking spaces,
+            choose your preferred location and book instantly.
+          </p>
+        </div>
+
+
+        <div className="parking-search-box">
+
+          {/* Location */}
+          <div className="search-field">
+            <label>Location</label>
+
+            <div className="search-input">
+              <span>📍</span>
+              <input
+                type="text"
+                placeholder="Enter parking location"
+              />
+            </div>
+          </div>
+
+
+          {/* Date */}
+          <div className="search-field">
+            <label>Date</label>
+
+            <div className="search-input">
+              <span>📅</span>
+
+              <input
+                type="date"
+              />
+            </div>
+          </div>
+
+
+          {/* Vehicle */}
+          <div className="search-field">
+            <label>Vehicle Type</label>
+
+            <div className="search-input">
+              <span>🚗</span>
+
+              <select>
+                <option value="">Select vehicle</option>
+                <option value="car">Car</option>
+                <option value="bike">Bike</option>
+                <option value="suv">SUV</option>
+              </select>
+            </div>
+          </div>
+
+
+          {/* Search Button */}
+          <Link
+            to="/search"
+            className="search-button"
+          >
+            Search Parking
+          </Link>
+
+        </div>
+
+      </section>
 
     </main>
   );
