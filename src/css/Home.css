@@ -1234,3 +1234,34 @@
 
   transform: translateX(4px);
 }
+/* ======================================== TABLET ======================================== */
+
+@media (max-width: 950px) {
+
+  .parking-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* ======================================== MOBILE ======================================== */
+
+@media (max-width: 650px) {
+
+  .featured-parking-section {
+    padding: 65px 20px;
+  }
+
+  .parking-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .parking-image {
+    height: 180px;
+  }
+
+  .parking-info {
+    padding: 20px;
+  }
+}
