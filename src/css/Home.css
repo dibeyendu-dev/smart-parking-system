@@ -908,3 +908,47 @@
     ),
     #f8fafc;
 }
+/* ======================================== PARKING CARD ======================================== */
+
+.parking-cards {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+
+/* ======================================== PARKING CARD ======================================== */
+
+.parking-card-item {
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  border: 1px solid rgba(226, 232, 240, 0.8);
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 15px 40px rgba(79, 70, 229, 0.08);
+
+  backdrop-filter: blur(15px);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.parking-card-item:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(124, 58, 237, 0.2);
+
+  box-shadow:
+    0 25px 55px rgba(79, 70, 229, 0.14);
+}
+
