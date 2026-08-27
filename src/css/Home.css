@@ -619,4 +619,13 @@
     transform: scale(0.9);
   }
 }
+/* ======================================== PARKING SEARCH SECTION  ======================================== */
+
+.parking-search-section {
+  position: relative;
+
+  padding: 90px 7%;
+
+  background: #ffffff;
+}
 
