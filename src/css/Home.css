@@ -794,4 +794,51 @@
 .search-input select {
   cursor: pointer;
 }
+/* ======================================== SEARCH BUTTON ======================================== */
+
+.search-button {
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 22px;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #0891b2,
+    #6366f1,
+    #7c3aed
+  );
+
+  background-size: 200% 200%;
+
+  border-radius: 11px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  box-shadow:
+    0 10px 22px rgba(99, 102, 241, 0.22);
+
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  transform: translateY(-3px);
+
+  background-position: 100% 50%;
+
+  box-shadow:
+    0 15px 28px rgba(124, 58, 237, 0.28);
+}
+
+.search-button:active {
+  transform: translateY(-1px);
+}
 
