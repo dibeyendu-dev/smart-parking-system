@@ -726,3 +726,18 @@
   box-shadow:
     0 25px 60px rgba(79, 70, 229, 0.14);
 }
+/* ======================================== SEARCH FIELD ======================================== */
+
+.search-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.search-field label {
+  color: #334155;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
