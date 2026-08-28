@@ -19,22 +19,16 @@
   gap: 60px;
 
   background:
-    radial-gradient(
-      circle at 15% 20%,
+    radial-gradient(circle at 15% 20%,
       rgba(34, 211, 238, 0.18),
-      transparent 35%
-    ),
-    radial-gradient(
-      circle at 85% 70%,
+      transparent 35%),
+    radial-gradient(circle at 85% 70%,
       rgba(139, 92, 246, 0.18),
-      transparent 35%
-    ),
-    linear-gradient(
-      135deg,
+      transparent 35%),
+    linear-gradient(135deg,
       #f8feff,
       #f5f3ff,
-      #ffffff
-    );
+      #ffffff);
 }
 
 /* ========================================HERO CONTENT======================================== */
@@ -74,6 +68,7 @@
 }
 
 @keyframes badgeFloat {
+
   0%,
   100% {
     transform: translateY(0);
@@ -99,12 +94,10 @@
 }
 
 .hero-content h1 span {
-  background: linear-gradient(
-    90deg,
-    #0891b2,
-    #6366f1,
-    #8b5cf6
-  );
+  background: linear-gradient(90deg,
+      #0891b2,
+      #6366f1,
+      #8b5cf6);
 
   background-size: 200% auto;
 
@@ -141,6 +134,7 @@
   font-size: 17px;
   line-height: 1.8;
 }
+
 /* ========================================
    HERO BUTTONS
 ======================================== */
@@ -171,12 +165,10 @@
 .hero-primary-btn {
   color: #ffffff;
 
-  background: linear-gradient(
-    135deg,
-    #0891b2,
-    #6366f1,
-    #7c3aed
-  );
+  background: linear-gradient(135deg,
+      #0891b2,
+      #6366f1,
+      #7c3aed);
 
   background-size: 200% 200%;
 
@@ -243,6 +235,7 @@
 
   font-size: 12px;
 }
+
 /* ======================================== HERO VISUAL ======================================== */
 
 .hero-visual {
@@ -254,6 +247,7 @@
   align-items: center;
   justify-content: center;
 }
+
 /* ======================================== PARKING CARD ======================================== */
 
 .parking-card {
@@ -280,6 +274,7 @@
 }
 
 @keyframes cardFloat {
+
   0%,
   100% {
     transform: translateY(0) rotate(0deg);
@@ -311,6 +306,7 @@
 
   font-size: 12px;
 }
+
 /* ======================================== PARKING SLOTS ======================================== */
 
 .parking-visual {
@@ -366,6 +362,7 @@
 
   border: 1px solid rgba(239, 68, 68, 0.15);
 }
+
 /* ======================================== CARD FOOTER ======================================== */
 
 .parking-card-footer {
@@ -461,6 +458,7 @@
 }
 
 @keyframes floatingOne {
+
   0%,
   100% {
     transform: translateY(0);
@@ -472,6 +470,7 @@
 }
 
 @keyframes floatingTwo {
+
   0%,
   100% {
     transform: translateY(0);
@@ -481,6 +480,7 @@
     transform: translateY(10px);
   }
 }
+
 /* ======================================== TABLET ======================================== */
 
 @media (max-width: 1000px) {
@@ -512,6 +512,7 @@
     min-height: 450px;
   }
 }
+
 /* ========================================
    MOBILE
 ======================================== */
@@ -619,6 +620,7 @@
     transform: scale(0.9);
   }
 }
+
 /* ======================================== PARKING SEARCH SECTION  ======================================== */
 
 .parking-search-section {
@@ -628,6 +630,7 @@
 
   background: #ffffff;
 }
+
 /* ======================================== SECTION HEADING ======================================== */
 
 .section-heading {
@@ -637,8 +640,8 @@
   text-align: center;
 }
 
-.section-heading > span {
-    display: inline-flex;
+.section-heading>span {
+  display: inline-flex;
   align-items: center;
 
   padding: 8px 14px;
@@ -674,12 +677,10 @@
 }
 
 .section-heading h2 strong {
-  background: linear-gradient(
-    90deg,
-    #0891b2,
-    #6366f1,
-    #7c3aed
-  );
+  background: linear-gradient(90deg,
+      #0891b2,
+      #6366f1,
+      #7c3aed);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -726,6 +727,7 @@
   box-shadow:
     0 25px 60px rgba(79, 70, 229, 0.14);
 }
+
 /* ======================================== SEARCH FIELD ======================================== */
 
 .search-field {
@@ -740,6 +742,7 @@
   font-size: 12px;
   font-weight: 700;
 }
+
 /* ======================================== SEARCH INPUT ======================================== */
 
 .search-input {
@@ -769,7 +772,7 @@
     0 0 0 4px rgba(139, 92, 246, 0.08);
 }
 
-.search-input > span {
+.search-input>span {
   font-size: 17px;
 }
 
@@ -794,6 +797,7 @@
 .search-input select {
   cursor: pointer;
 }
+
 /* ======================================== SEARCH BUTTON ======================================== */
 
 .search-button {
@@ -807,12 +811,10 @@
 
   color: #ffffff;
 
-  background: linear-gradient(
-    135deg,
-    #0891b2,
-    #6366f1,
-    #7c3aed
-  );
+  background: linear-gradient(135deg,
+      #0891b2,
+      #6366f1,
+      #7c3aed);
 
   background-size: 200% 200%;
 
@@ -841,6 +843,7 @@
 .search-button:active {
   transform: translateY(-1px);
 }
+
 /* ======================================== TABLET ======================================== */
 
 @media (max-width: 900px) {
@@ -888,6 +891,7 @@
     min-height: 50px;
   }
 }
+
 /* ======================================== FEATURED PARKING ======================================== */
 
 .featured-parking-section {
@@ -896,18 +900,15 @@
   padding: 90px 7%;
 
   background:
-    radial-gradient(
-      circle at 10% 30%,
+    radial-gradient(circle at 10% 30%,
       rgba(34, 211, 238, 0.08),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 90% 70%,
+      transparent 30%),
+    radial-gradient(circle at 90% 70%,
       rgba(124, 58, 237, 0.08),
-      transparent 30%
-    ),
+      transparent 30%),
     #f8fafc;
 }
+
 /* ======================================== PARKING CARD ======================================== */
 
 .parking-cards {
@@ -964,12 +965,10 @@
   align-items: center;
   justify-content: center;
 
-  background: linear-gradient(
-    135deg,
-    #cffafe,
-    #ddd6fe,
-    #e9d5ff
-  );
+  background: linear-gradient(135deg,
+      #cffafe,
+      #ddd6fe,
+      #e9d5ff);
 
   overflow: hidden;
 }
@@ -992,6 +991,7 @@
 }
 
 @keyframes parkingGlow {
+
   0%,
   100% {
     transform: scale(1);
@@ -1033,6 +1033,7 @@
 }
 
 @keyframes iconFloat {
+
   0%,
   100% {
     transform: translateY(0);
@@ -1042,6 +1043,7 @@
     transform: translateY(-7px);
   }
 }
+
 /* ======================================== STATUS ======================================== */
 
 .parking-status {
@@ -1065,6 +1067,7 @@
 
   backdrop-filter: blur(8px);
 }
+
 /* ======================================== PARKING INFO ======================================== */
 
 .parking-info {
@@ -1091,7 +1094,7 @@
   line-height: 1.3;
 }
 
-.parking-title > span {
+.parking-title>span {
   flex-shrink: 0;
 
   color: #d97706;
@@ -1174,6 +1177,7 @@
   font-size: 11px;
   font-weight: 500;
 }
+
 /* ======================================== VIEW PARKING BUTTON ======================================== */
 
 .view-parking-btn {
@@ -1196,11 +1200,9 @@
 .view-parking-btn:hover {
   color: #ffffff;
 
-  background: linear-gradient(
-    135deg,
-    #0891b2,
-    #7c3aed
-  );
+  background: linear-gradient(135deg,
+      #0891b2,
+      #7c3aed);
 
   transform: translateY(-2px);
 
@@ -1234,6 +1236,7 @@
 
   transform: translateX(4px);
 }
+
 /* ======================================== TABLET ======================================== */
 
 @media (max-width: 950px) {
@@ -1265,6 +1268,7 @@
     padding: 20px;
   }
 }
+
 /* ======================================== HOW IT WORKS ======================================== */
 
 .how-it-works-section {
@@ -1273,20 +1277,17 @@
   padding: 100px 7%;
 
   background:
-    radial-gradient(
-      circle at 15% 50%,
+    radial-gradient(circle at 15% 50%,
       rgba(34, 211, 238, 0.09),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 85% 50%,
+      transparent 30%),
+    radial-gradient(circle at 85% 50%,
       rgba(124, 58, 237, 0.09),
-      transparent 30%
-    ),
+      transparent 30%),
     #ffffff;
 
   overflow: hidden;
 }
+
 /* ======================================== STEPS CONTAINER ======================================== */
 
 .steps-container {
@@ -1315,13 +1316,11 @@
 
   height: 2px;
 
-  background: linear-gradient(
-    90deg,
-    #22d3ee,
-    #6366f1,
-    #a855f7,
-    #22d3ee
-  );
+  background: linear-gradient(90deg,
+      #22d3ee,
+      #6366f1,
+      #a855f7,
+      #22d3ee);
 
   background-size: 200% 100%;
 
@@ -1338,4 +1337,102 @@
   100% {
     background-position: 200% 50%;
   }
+}
+
+/* ========================================
+   STEP CARD
+======================================== */
+
+.step-card {
+  position: relative;
+  z-index: 1;
+
+  padding: 32px 22px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  border: 1px solid rgba(226, 232, 240, 0.8);
+
+  border-radius: 22px;
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  box-shadow:
+    0 15px 35px rgba(79, 70, 229, 0.07);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-9px);
+
+  border-color: rgba(124, 58, 237, 0.18);
+
+  box-shadow:
+    0 25px 50px rgba(79, 70, 229, 0.13);
+}
+
+
+/* ========================================
+   STEP NUMBER
+======================================== */
+
+.step-number {
+  position: absolute;
+
+  top: 12px;
+  right: 15px;
+
+  color: #cbd5e1;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+
+/* ========================================
+   STEP ICON
+======================================== */
+
+.step-icon {
+  position: relative;
+  z-index: 2;
+
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 29px;
+
+  background: linear-gradient(135deg,
+      rgba(34, 211, 238, 0.12),
+      rgba(139, 92, 246, 0.14));
+
+  border: 1px solid rgba(139, 92, 246, 0.12);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 25px rgba(79, 70, 229, 0.08);
+
+  transition: all 0.35s ease;
+}
+
+.step-card:hover .step-icon {
+  transform:
+    translateY(-4px) rotate(-5deg) scale(1.06);
+
+  box-shadow:
+    0 15px 30px rgba(124, 58, 237, 0.14);
 }
