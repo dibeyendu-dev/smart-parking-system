@@ -467,10 +467,32 @@ function Home() {
 
           </div>
 
+          {/* Step 4 */}
+          <div className="step-card">
 
+            <div className="step-number">
+              04
+            </div>
 
-        </main>
-        );
+            <div className="step-icon">
+              🚗
+            </div>
+
+            <h3>Park & Enjoy</h3>
+
+            <p>
+              Arrive at your parking spot, park
+              easily and manage your booking.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+  );
 }
 
-        export default Home;
+export default Home;
