@@ -439,10 +439,38 @@ function Home() {
             </div>
 
             <h3>Choose Your Spot</h3>
+            <p>
+              Check available slots, prices and
+              choose the perfect parking space.
+            </p>
+
+          </div>
 
 
-          </main>
-          );
+          {/* Step 3 */}
+          <div className="step-card">
+
+            <div className="step-number">
+              03
+            </div>
+
+            <div className="step-icon">
+              📅
+            </div>
+
+            <h3>Book & Pay</h3>
+
+            <p>
+              Select your vehicle, date and time,
+              then complete your booking securely.
+            </p>
+
+          </div>
+
+
+
+        </main>
+        );
 }
 
-          export default Home;
+        export default Home;
