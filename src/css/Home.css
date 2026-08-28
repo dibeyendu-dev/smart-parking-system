@@ -1287,3 +1287,55 @@
 
   overflow: hidden;
 }
+/* ======================================== STEPS CONTAINER ======================================== */
+
+.steps-container {
+  position: relative;
+
+  max-width: 1150px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+
+/* Connecting Line */
+
+.steps-container::before {
+  content: "";
+
+  position: absolute;
+
+  top: 45px;
+  left: 12%;
+  right: 12%;
+
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    #22d3ee,
+    #6366f1,
+    #a855f7,
+    #22d3ee
+  );
+
+  background-size: 200% 100%;
+
+  opacity: 0.25;
+
+  animation: stepLine 5s linear infinite;
+}
+
+@keyframes stepLine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
+}
