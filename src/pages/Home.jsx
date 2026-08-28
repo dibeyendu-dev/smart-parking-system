@@ -387,6 +387,23 @@ function Home() {
         </div>
 
       </section>
+      {/* ================= HOW IT WORKS ================= */}
+      <section className="how-it-works-section">
+
+        <div className="section-heading">
+
+          <span>✦ Simple Process</span>
+
+          <h2>
+            How <strong>ParkEase</strong> Works
+          </h2>
+
+          <p>
+            Find, book and manage your parking spot
+            in just a few simple steps.
+          </p>
+
+        </div>
 
     </main>
   );
