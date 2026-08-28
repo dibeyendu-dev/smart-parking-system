@@ -1462,3 +1462,21 @@
     display: none;
   }
 }
+/* ======================================== MOBILE ======================================== */
+
+@media (max-width: 600px) {
+
+  .how-it-works-section {
+    padding: 70px 20px;
+  }
+
+  .steps-container {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .step-card {
+    padding: 28px 22px;
+  }
+}
