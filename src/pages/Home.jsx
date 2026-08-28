@@ -404,9 +404,45 @@ function Home() {
           </p>
 
         </div>
+        <div className="steps-container">
 
-    </main>
-  );
+          {/* Step 1 */}
+          <div className="step-card">
+
+            <div className="step-number">
+              01
+            </div>
+
+            <div className="step-icon">
+              📍
+            </div>
+
+            <h3>Find Parking</h3>
+
+            <p>
+              Search for nearby parking areas
+              based on your location and needs.
+            </p>
+
+          </div>
+
+
+          {/* Step 2 */}
+          <div className="step-card">
+
+            <div className="step-number">
+              02
+            </div>
+
+            <div className="step-icon">
+              🅿️
+            </div>
+
+            <h3>Choose Your Spot</h3>
+
+
+          </main>
+          );
 }
 
-export default Home;
+          export default Home;
