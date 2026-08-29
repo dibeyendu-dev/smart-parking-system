@@ -531,6 +531,25 @@ function Home() {
 
           </div>
 
+          {/* Feature 2 */}
+          <div className="feature-card">
+
+            <div className="feature-icon">
+              ⚡
+            </div>
+
+            <h3>Live Availability</h3>
+
+            <p>
+              Check available parking slots in
+              real-time before making a booking.
+            </p>
+
+            <Link to="/search" className="feature-link">
+              Check Availability →
+            </Link>
+
+          </div>
 
 
         </main>
