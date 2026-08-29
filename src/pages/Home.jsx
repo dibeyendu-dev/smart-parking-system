@@ -490,6 +490,25 @@ function Home() {
         </div>
 
       </section>
+      {/* ================= KEY FEATURES ================= */}
+      <section className="features-section">
+
+        <div className="section-heading">
+
+          <span>✦ Powerful Features</span>
+
+          <h2>
+            Everything You Need for
+            <strong> Smart Parking</strong>
+          </h2>
+
+          <p>
+            Experience a smarter, easier and more
+            convenient way to find and manage parking.
+          </p>
+
+        </div>
+
 
     </main>
   );
