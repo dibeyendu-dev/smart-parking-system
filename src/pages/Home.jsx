@@ -509,9 +509,32 @@ function Home() {
 
         </div>
 
+        <div className="features-grid">
 
-    </main>
-  );
+          {/* Feature 1 */}
+          <div className="feature-card">
+
+            <div className="feature-icon">
+              🔎
+            </div>
+
+            <h3>Smart Search</h3>
+
+            <p>
+              Quickly find nearby parking spaces
+              based on location and availability.
+            </p>
+
+            <Link to="/search" className="feature-link">
+              Find Parking →
+            </Link>
+
+          </div>
+
+
+
+        </main>
+        );
 }
 
-export default Home;
+        export default Home;
