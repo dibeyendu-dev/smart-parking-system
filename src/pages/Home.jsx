@@ -622,9 +622,17 @@ function Home() {
               Your account and booking information
               are protected with secure access.
             </p>
+            <Link to="/register" className="feature-link">
+              Get Started →
+            </Link>
 
-          </main>
-          );
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+  );
 }
 
-          export default Home;
+export default Home;
