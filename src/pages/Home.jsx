@@ -609,8 +609,22 @@ function Home() {
             </Link>
 
           </div>
-        </main>
-        );
+          {/* Feature 6 */}
+          <div className="feature-card">
+
+            <div className="feature-icon">
+              🔐
+            </div>
+
+            <h3>Secure Platform</h3>
+
+            <p>
+              Your account and booking information
+              are protected with secure access.
+            </p>
+
+          </main>
+          );
 }
 
-        export default Home;
+          export default Home;
