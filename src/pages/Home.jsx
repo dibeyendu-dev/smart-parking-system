@@ -570,6 +570,27 @@ function Home() {
 
           </div>
 
+          {/* Feature 4 */}
+          <div className="feature-card">
+
+            <div className="feature-icon">
+              💰
+            </div>
+
+            <h3>Smart Pricing</h3>
+
+            <p>
+              Calculate parking charges based on
+              vehicle type and parking duration.
+            </p>
+
+            <Link to="/search" className="feature-link">
+              View Pricing →
+            </Link>
+
+          </div>
+
+
         </main>
         );
 }
