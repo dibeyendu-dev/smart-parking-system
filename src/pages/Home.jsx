@@ -550,7 +550,25 @@ function Home() {
             </Link>
 
           </div>
+          {/* Feature 3 */}
+          <div className="feature-card">
 
+            <div className="feature-icon">
+              📅
+            </div>
+
+            <h3>Easy Booking</h3>
+
+            <p>
+              Reserve your preferred parking spot
+              with just a few simple steps.
+            </p>
+
+            <Link to="/search" className="feature-link">
+              Book a Spot →
+            </Link>
+
+          </div>
 
         </main>
         );
