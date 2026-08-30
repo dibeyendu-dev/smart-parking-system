@@ -1697,3 +1697,52 @@
 .feature-card:hover .feature-link {
   letter-spacing: 0.2px;
 }
+/* ========================================
+   TABLET RESPONSIVE
+======================================== */
+
+@media (max-width: 950px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
+
+@media (max-width: 650px) {
+  .features-section {
+    padding: 70px 20px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .feature-card {
+    padding: 24px;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 400px) {
+  .features-section {
+    padding: 60px 16px;
+  }
+
+  .feature-card {
+    padding: 22px;
+  }
+
+  .feature-icon {
+    width: 54px;
+    height: 54px;
+  }
+}
