@@ -1662,3 +1662,38 @@
   font-size: 13px;
   line-height: 1.7;
 }
+/* ========================================
+   FEATURE LINK
+======================================== */
+
+.feature-link {
+  display: inline-flex;
+  align-items: center;
+
+  color: #6366f1;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* Link Hover */
+
+.feature-link:hover {
+  color: #0891b2;
+
+  transform: translateX(5px);
+}
+
+
+/* ========================================
+   FEATURE LINK EFFECT
+======================================== */
+
+.feature-card:hover .feature-link {
+  letter-spacing: 0.2px;
+}
