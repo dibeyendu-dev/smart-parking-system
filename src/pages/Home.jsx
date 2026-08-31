@@ -631,6 +631,89 @@ function Home() {
         </div>
 
       </section>
+      {/* ================= STATISTICS ================= */}
+      <section className="statistics-section">
+
+        <div className="section-heading">
+
+          <span>✦ ParkEase In Numbers</span>
+
+          <h2>
+            Parking Made <strong>Better</strong>
+          </h2>
+
+          <p>
+            Trusted by users and parking providers
+            for a smoother parking experience.
+          </p>
+
+        </div>
+
+
+        <div className="statistics-grid">
+
+          {/* Stat 1 */}
+          <div className="stat-card">
+
+            <div className="stat-icon">
+              🅿️
+            </div>
+
+            <div className="stat-content">
+              <strong>500+</strong>
+              <span>Parking Spots</span>
+            </div>
+
+          </div>
+
+
+          {/* Stat 2 */}
+          <div className="stat-card">
+
+            <div className="stat-icon">
+              📍
+            </div>
+
+            <div className="stat-content">
+              <strong>50+</strong>
+              <span>Parking Locations</span>
+            </div>
+
+          </div>
+
+
+          {/* Stat 3 */}
+          <div className="stat-card">
+
+            <div className="stat-icon">
+              👥
+            </div>
+
+            <div className="stat-content">
+              <strong>10K+</strong>
+              <span>Happy Users</span>
+            </div>
+
+          </div>
+
+
+          {/* Stat 4 */}
+          <div className="stat-card">
+
+            <div className="stat-icon">
+              ⭐
+            </div>
+
+            <div className="stat-content">
+              <strong>4.8/5</strong>
+              <span>Average Rating</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
     </main>
   );
 }
