@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./../css/FindParking.css";
 
 function FindParking() {
-
     const [vehicleType, setVehicleType] = useState("");
     const [selectedSlot, setSelectedSlot] = useState(null);
 
@@ -15,56 +14,23 @@ function FindParking() {
     };
 
     // Parking data
-    const parkingAreas = [
-        {
-            id: 1,
-            name: "City Center Parking",
-            location: "Central Avenue, Kolkata",
-            rating: "4.8",
-            slots: [
-                { id: "A1", status: "available" },
-                { id: "A2", status: "occupied" },
-                { id: "A3", status: "available" },
-                { id: "A4", status: "available" },
-                { id: "B1", status: "occupied" },
-                { id: "B2", status: "available" }
-            ]
-        },
-
-        {
-            id: 2,
-            name: "Metro Station Parking",
-            location: "Park Street, Kolkata",
-            rating: "4.7",
-            slots: [
-                { id: "A1", status: "available" },
-                { id: "A2", status: "available" },
-                { id: "A3", status: "occupied" },
-                { id: "A4", status: "available" },
-                { id: "B1", status: "occupied" },
-                { id: "B2", status: "available" }
-            ]
-        },
-
-        {
-            id: 3,
-            name: "Mall Parking Zone",
-            location: "Salt Lake, Kolkata",
-            rating: "4.9",
-            slots: [
-                { id: "A1", status: "available" },
-                { id: "A2", status: "occupied" },
-                { id: "A3", status: "available" },
-                { id: "A4", status: "occupied" },
-                { id: "B1", status: "available" },
-                { id: "B2", status: "available" }
-            ]
-        }
-    ];
+    const parkingArea = {
+        id: 1,
+        name: "City Mall Parking",
+        location: "City Mall, Kolkata",
+        rating: "4.9",
+        slots: [
+            { id: "A1", status: "available" },
+            { id: "A2", status: "occupied" },
+            { id: "A3", status: "available" },
+            { id: "A4", status: "available" },
+            { id: "B1", status: "occupied" },
+            { id: "B2", status: "available" }
+        ]
+    };
 
     // Select parking slot
-    function selectSlot(area, slot) {
-
+    function selectSlot(slot) {
         if (slot.status === "occupied") {
             return;
         }
@@ -75,8 +41,8 @@ function FindParking() {
         }
 
         setSelectedSlot({
-            areaName: area.name,
-            location: area.location,
+            areaName: parkingArea.name,
+            location: parkingArea.location,
             slotId: slot.id,
             vehicle: vehicleType,
             price: prices[vehicleType]
@@ -98,12 +64,11 @@ function FindParking() {
                 </h1>
 
                 <p>
-                    Choose your location, vehicle type and
-                    available parking slot to book your spot easily.
+                    Choose your vehicle type and available
+                    parking slot to book your spot easily.
                 </p>
 
             </section>
-
 
             {/* Search */}
             <section className="find-parking-search">
@@ -118,12 +83,12 @@ function FindParking() {
 
                         <input
                             type="text"
-                            placeholder="Enter parking location"
+                            value="City Mall, Kolkata"
+                            readOnly
                         />
                     </div>
 
                 </div>
-
 
                 {/* Date */}
                 <div className="search-field">
@@ -137,7 +102,6 @@ function FindParking() {
                     </div>
 
                 </div>
-
 
                 {/* Vehicle */}
                 <div className="search-field">
@@ -155,7 +119,6 @@ function FindParking() {
                                 setSelectedSlot(null);
                             }}
                         >
-
                             <option value="">
                                 Select vehicle
                             </option>
@@ -179,7 +142,6 @@ function FindParking() {
                 </div>
 
             </section>
-
 
             {/* Price */}
             <section className="vehicle-price-info">
@@ -210,8 +172,7 @@ function FindParking() {
 
             </section>
 
-
-            {/* Parking Areas */}
+            {/* Parking Area */}
             <section className="parking-results">
 
                 <div className="section-heading">
@@ -226,126 +187,114 @@ function FindParking() {
 
                     <p>
                         Select an available parking slot from
-                        your preferred parking area.
+                        City Mall Parking.
                     </p>
 
                 </div>
 
-
                 <div className="parking-results-grid">
 
-                    {parkingAreas.map((area) => (
+                    <div
+                        className="parking-result-card"
+                        key={parkingArea.id}
+                    >
 
-                        <div
-                            className="parking-result-card"
-                            key={area.id}
-                        >
+                        {/* Parking Header */}
+                        <div className="parking-result-header">
 
-                            {/* Parking Header */}
-                            <div className="parking-result-header">
+                            <div>
 
-                                <div>
+                                <h3>
+                                    {parkingArea.name}
+                                </h3>
 
-                                    <h3>
-                                        {area.name}
-                                    </h3>
-
-                                    <p>
-                                        📍 {area.location}
-                                    </p>
-
-                                </div>
-
-                                <span className="parking-rating">
-                                    ⭐ {area.rating}
-                                </span>
+                                <p>
+                                    📍 {parkingArea.location}
+                                </p>
 
                             </div>
 
-
-                            {/* Slots */}
-                            <div className="parking-availability">
-
-                                <span>
-                                    🅿️ Available
-                                </span>
-
-                                <span>
-                                    Total {area.slots.length} Slots
-                                </span>
-
-                            </div>
-
-
-                            {/* Parking Slots */}
-                            <div className="parking-slots">
-
-                                {area.slots.map((slot) => (
-
-                                    <button
-                                        key={slot.id}
-                                        className={`
-                                            parking-slot
-                                            ${slot.status}
-                                            ${selectedSlot?.areaName === area.name &&
-                                                selectedSlot?.slotId === slot.id
-                                                ? "selected"
-                                                : ""
-                                            }
-                                        `}
-                                        disabled={slot.status === "occupied"}
-                                        onClick={() =>
-                                            selectSlot(area, slot)
-                                        }
-                                    >
-
-                                        <strong>
-                                            {slot.id}
-                                        </strong>
-
-                                        <span>
-                                            {slot.status === "occupied"
-                                                ? "Occupied"
-                                                : "Available"}
-                                        </span>
-
-                                    </button>
-
-                                ))}
-
-                            </div>
-
-
-                            {/* Price */}
-                            <div className="parking-result-price">
-
-                                <small>
-                                    Price
-                                </small>
-
-                                <strong>
-
-                                    {vehicleType
-                                        ? `₹${prices[vehicleType]}`
-                                        : "Select Vehicle"
-                                    }
-
-                                    <span>
-                                        /hr
-                                    </span>
-
-                                </strong>
-
-                            </div>
+                            <span className="parking-rating">
+                                ⭐ {parkingArea.rating}
+                            </span>
 
                         </div>
 
-                    ))}
+                        {/* Availability */}
+                        <div className="parking-availability">
+
+                            <span>
+                                🅿️ Available
+                            </span>
+
+                            <span>
+                                Total {parkingArea.slots.length} Slots
+                            </span>
+
+                        </div>
+
+                        {/* Parking Slots */}
+                        <div className="parking-slots">
+
+                            {parkingArea.slots.map((slot) => (
+
+                                <button
+                                    key={slot.id}
+                                    className={`
+                                        parking-slot
+                                        ${slot.status}
+                                        ${selectedSlot?.slotId === slot.id
+                                            ? "selected"
+                                            : ""
+                                        }
+                                    `}
+                                    disabled={slot.status === "occupied"}
+                                    onClick={() => selectSlot(slot)}
+                                >
+
+                                    <strong>
+                                        {slot.id}
+                                    </strong>
+
+                                    <span>
+                                        {slot.status === "occupied"
+                                            ? "Occupied"
+                                            : "Available"}
+                                    </span>
+
+                                </button>
+
+                            ))}
+
+                        </div>
+
+                        {/* Price */}
+                        <div className="parking-result-price">
+
+                            <small>
+                                Price
+                            </small>
+
+                            <strong>
+
+                                {vehicleType
+                                    ? `₹${prices[vehicleType]}`
+                                    : "Select Vehicle"
+                                }
+
+                                <span>
+                                    /hr
+                                </span>
+
+                            </strong>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
             </section>
-
 
             {/* Selected Slot */}
             {selectedSlot && (
@@ -366,10 +315,10 @@ function FindParking() {
                             📍 {selectedSlot.location}
                         </p>
 
-
                         <div className="selected-details">
 
                             <div>
+
                                 <small>
                                     Parking Slot
                                 </small>
@@ -377,10 +326,11 @@ function FindParking() {
                                 <strong>
                                     🅿️ {selectedSlot.slotId}
                                 </strong>
+
                             </div>
 
-
                             <div>
+
                                 <small>
                                     Vehicle
                                 </small>
@@ -396,10 +346,11 @@ function FindParking() {
                                     {selectedSlot.vehicle.toUpperCase()}
 
                                 </strong>
+
                             </div>
 
-
                             <div>
+
                                 <small>
                                     Price
                                 </small>
@@ -407,10 +358,10 @@ function FindParking() {
                                 <strong>
                                     ₹{selectedSlot.price}/hr
                                 </strong>
+
                             </div>
 
                         </div>
-
 
                         <Link
                             to="/booking"
