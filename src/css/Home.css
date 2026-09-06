@@ -1996,3 +1996,39 @@
   }
 
 }
+/* ======================================== WHY CHOOSE PARKEASE ======================================== */
+
+.why-parkease-section {
+  position: relative;
+
+  padding: 100px 7%;
+
+  background:
+    radial-gradient(
+      circle at 5% 50%,
+      rgba(34, 211, 238, 0.10),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 95% 50%,
+      rgba(124, 58, 237, 0.10),
+      transparent 30%
+    ),
+    #f8fafc;
+
+  overflow: hidden;
+}
+
+
+/* ======================================== MAIN CONTENT ======================================== */
+
+.why-parkease-content {
+  max-width: 1150px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+  gap: 70px;
+}
