@@ -714,6 +714,123 @@ function Home() {
         </div>
 
       </section>
+      {/* ================= WHY CHOOSE PARKEASE ================= */}
+      <section className="why-parkease-section">
+
+        <div className="section-heading">
+
+          <span>✦ Why ParkEase</span>
+
+          <h2>
+            Parking Made
+            <strong> Simple & Smart</strong>
+          </h2>
+
+          <p>
+            Everything is designed to make your
+            parking experience faster and easier.
+          </p>
+
+        </div>
+
+
+        <div className="why-parkease-content">
+
+          {/* Left Side */}
+          <div className="why-parkease-visual">
+
+            <div className="parking-orbit">
+
+              <div className="orbit-circle"></div>
+
+              <div className="orbit-car">
+                🚗
+              </div>
+
+            </div>
+
+          </div>
+
+
+          {/* Right Side */}
+          <div className="why-parkease-points">
+
+            <div className="why-point">
+
+              <div className="why-point-icon">
+                ⚡
+              </div>
+
+              <div>
+                <h3>Save Your Time</h3>
+
+                <p>
+                  Find an available parking spot
+                  without wasting time searching.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="why-point">
+
+              <div className="why-point-icon">
+                💰
+              </div>
+
+              <div>
+                <h3>Transparent Pricing</h3>
+
+                <p>
+                  Know your parking cost based on
+                  vehicle type and parking duration.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="why-point">
+
+              <div className="why-point-icon">
+                📱
+              </div>
+
+              <div>
+                <h3>Easy Management</h3>
+
+                <p>
+                  Manage your bookings and parking
+                  details from one simple dashboard.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="why-point">
+
+              <div className="why-point-icon">
+                🔒
+              </div>
+
+              <div>
+                <h3>Secure Booking</h3>
+
+                <p>
+                  Your account and booking details
+                  stay protected with secure access.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
     </main>
   );
 }
