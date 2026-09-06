@@ -1,15 +1,14 @@
-/* ======================================== HOME PAGE======================================== */
+/* ======================================== HOME PAGE ======================================== */
 
 .home-page {
   overflow: hidden;
 }
 
 
-/* ========================================HERO SECTION======================================== */
+/* ======================================== HERO SECTION ======================================== */
 
 .hero-section {
   position: relative;
-
   min-height: 680px;
   padding: 90px 7%;
 
@@ -31,7 +30,8 @@
       #ffffff);
 }
 
-/* ========================================HERO CONTENT======================================== */
+
+/* ======================================== HERO CONTENT ======================================== */
 
 .hero-content {
   position: relative;
@@ -53,7 +53,6 @@
   background: rgba(255, 255, 255, 0.65);
 
   border: 1px solid rgba(124, 58, 237, 0.15);
-
   border-radius: 50px;
 
   font-size: 13px;
@@ -94,7 +93,8 @@
 }
 
 .hero-content h1 span {
-  background: linear-gradient(90deg,
+  background:
+    linear-gradient(90deg,
       #0891b2,
       #6366f1,
       #8b5cf6);
@@ -135,6 +135,7 @@
   line-height: 1.8;
 }
 
+
 /* ======================================== HERO BUTTONS ======================================== */
 
 .hero-buttons {
@@ -158,12 +159,13 @@
 }
 
 
-/* Primary */
+/* Primary Button */
 
 .hero-primary-btn {
   color: #ffffff;
 
-  background: linear-gradient(135deg,
+  background:
+    linear-gradient(135deg,
       #0891b2,
       #6366f1,
       #7c3aed);
@@ -184,7 +186,7 @@
 }
 
 
-/* Secondary */
+/* Secondary Button */
 
 .hero-secondary-btn {
   color: #475569;
@@ -206,6 +208,7 @@
   background: rgba(255, 255, 255, 0.9);
 }
 
+
 /* ======================================== HERO STATS ======================================== */
 
 .hero-stats {
@@ -224,15 +227,14 @@
 
 .hero-stat strong {
   font-size: 24px;
-
   color: #111827;
 }
 
 .hero-stat span {
   color: #64748b;
-
   font-size: 12px;
 }
+
 
 /* ======================================== HERO VISUAL ======================================== */
 
@@ -245,6 +247,7 @@
   align-items: center;
   justify-content: center;
 }
+
 
 /* ======================================== PARKING CARD ======================================== */
 
@@ -284,7 +287,7 @@
 }
 
 
-/* Card Header */
+/* Parking Card Header */
 
 .parking-card-header {
   display: flex;
@@ -301,9 +304,9 @@
 
 .live-status {
   color: #059669;
-
   font-size: 12px;
 }
+
 
 /* ======================================== PARKING SLOTS ======================================== */
 
@@ -339,9 +342,6 @@
   transform: scale(1.05);
 }
 
-
-/* Available */
-
 .parking-slot.available {
   color: #047857;
 
@@ -349,9 +349,6 @@
 
   border: 1px solid rgba(16, 185, 129, 0.2);
 }
-
-
-/* Occupied */
 
 .parking-slot.occupied {
   color: #b91c1c;
@@ -361,7 +358,8 @@
   border: 1px solid rgba(239, 68, 68, 0.15);
 }
 
-/* ======================================== CARD FOOTER ======================================== */
+
+/* ======================================== PARKING CARD FOOTER ======================================== */
 
 .parking-card-footer {
   display: flex;
@@ -377,9 +375,9 @@
 
 .parking-card-footer strong {
   color: #7c3aed;
-
   font-size: 18px;
 }
+
 
 /* ======================================== FLOATING CARDS ======================================== */
 
@@ -428,13 +426,11 @@
 
 .floating-card strong {
   color: #1e293b;
-
   font-size: 12px;
 }
 
 .floating-card small {
   color: #94a3b8;
-
   font-size: 10px;
 }
 
@@ -479,143 +475,8 @@
   }
 }
 
-/* ======================================== TABLET ======================================== */
 
-@media (max-width: 1000px) {
-
-  .hero-section {
-    grid-template-columns: 1fr;
-
-    padding: 75px 6%;
-
-    text-align: center;
-  }
-
-  .hero-content {
-    max-width: 750px;
-    margin: auto;
-  }
-
-  .hero-content p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-buttons,
-  .hero-stats {
-    justify-content: center;
-  }
-
-  .hero-visual {
-    min-height: 450px;
-  }
-}
-
-/* ======================================== MOBILE ======================================== */
-
-@media (max-width: 600px) {
-
-  .hero-section {
-    min-height: auto;
-
-    padding: 60px 20px 70px;
-
-    gap: 35px;
-  }
-
-  .hero-content h1 {
-    font-size: 46px;
-
-    letter-spacing: -2px;
-  }
-
-  .hero-content p {
-    font-size: 15px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-
-    width: 100%;
-  }
-
-  .hero-primary-btn,
-  .hero-secondary-btn {
-    width: 100%;
-
-    text-align: center;
-  }
-
-  .hero-stats {
-    gap: 22px;
-  }
-
-  .hero-stat strong {
-    font-size: 20px;
-  }
-
-  .hero-stat span {
-    font-size: 10px;
-  }
-
-  .hero-visual {
-    min-height: 400px;
-  }
-
-  .parking-card {
-    width: 100%;
-
-    padding: 18px;
-
-    border-radius: 22px;
-  }
-
-  .parking-slot {
-    height: 65px;
-  }
-
-  .floating-card {
-    padding: 10px 12px;
-  }
-
-  .floating-card-one {
-    top: 20px;
-    right: -5px;
-  }
-
-  .floating-card-two {
-    bottom: 20px;
-    left: -5px;
-  }
-}
-
-
-/* ======================================== SMALL MOBILE ======================================== */
-
-@media (max-width: 400px) {
-
-  .hero-content h1 {
-    font-size: 39px;
-  }
-
-  .hero-stats {
-    gap: 14px;
-  }
-
-  .parking-visual {
-    gap: 8px;
-  }
-
-  .parking-slot {
-    height: 55px;
-  }
-
-  .floating-card {
-    transform: scale(0.9);
-  }
-}
-
-/* ======================================== PARKING SEARCH SECTION  ======================================== */
+/* ======================================== PARKING SEARCH SECTION ======================================== */
 
 .parking-search-section {
   position: relative;
@@ -625,10 +486,12 @@
   background: #ffffff;
 }
 
+
 /* ======================================== SECTION HEADING ======================================== */
 
 .section-heading {
   max-width: 700px;
+
   margin: 0 auto 40px;
 
   text-align: center;
@@ -659,19 +522,21 @@
   animation: badgeFloat 3s ease-in-out infinite;
 }
 
-
 .section-heading h2 {
   margin-bottom: 15px;
 
   color: #111827;
 
   font-size: clamp(32px, 4vw, 48px);
+
   line-height: 1.15;
+
   letter-spacing: -1.5px;
 }
 
 .section-heading h2 strong {
-  background: linear-gradient(90deg,
+  background:
+    linear-gradient(90deg,
       #0891b2,
       #6366f1,
       #7c3aed);
@@ -687,17 +552,22 @@
   line-height: 1.7;
 }
 
+
 /* ======================================== SEARCH BOX ======================================== */
 
 .parking-search-box {
   max-width: 1100px;
-  margin: auto;
 
+  margin: auto;
   padding: 22px;
 
   display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr auto;
+
+  grid-template-columns:
+    1.3fr 1fr 1fr auto;
+
   align-items: end;
+
   gap: 16px;
 
   background: rgba(255, 255, 255, 0.75);
@@ -722,7 +592,8 @@
     0 25px 60px rgba(79, 70, 229, 0.14);
 }
 
-/* ======================================== SEARCH FIELD ======================================== */
+
+/* Search Field */
 
 .search-field {
   display: flex;
@@ -737,7 +608,8 @@
   font-weight: 700;
 }
 
-/* ======================================== SEARCH INPUT ======================================== */
+
+/* Search Input */
 
 .search-input {
   min-height: 48px;
@@ -792,7 +664,8 @@
   cursor: pointer;
 }
 
-/* ======================================== SEARCH BUTTON ======================================== */
+
+/* Search Button */
 
 .search-button {
   min-height: 48px;
@@ -805,7 +678,8 @@
 
   color: #ffffff;
 
-  background: linear-gradient(135deg,
+  background:
+    linear-gradient(135deg,
       #0891b2,
       #6366f1,
       #7c3aed);
@@ -838,53 +712,6 @@
   transform: translateY(-1px);
 }
 
-/* ======================================== TABLET ======================================== */
-
-@media (max-width: 900px) {
-
-  .parking-search-box {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .search-button {
-    width: 100%;
-  }
-}
-
-
-/* ======================================== MOBILE ======================================== */
-
-@media (max-width: 600px) {
-
-  .parking-search-section {
-    padding: 65px 20px;
-  }
-
-  .section-heading {
-    margin-bottom: 30px;
-  }
-
-  .section-heading h2 {
-    font-size: 34px;
-  }
-
-  .section-heading p {
-    font-size: 14px;
-  }
-
-  .parking-search-box {
-    grid-template-columns: 1fr;
-
-    padding: 18px;
-
-    border-radius: 18px;
-  }
-
-  .search-input,
-  .search-button {
-    min-height: 50px;
-  }
-}
 
 /* ======================================== FEATURED PARKING ======================================== */
 
@@ -903,20 +730,17 @@
     #f8fafc;
 }
 
-/* ======================================== PARKING CARD ======================================== */
+
+/* Parking Cards */
 
 .parking-cards {
   max-width: 1200px;
   margin: auto;
-
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
+  grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
+  justify-content: center;
   gap: 24px;
 }
-
-
-/* ======================================== PARKING CARD ======================================== */
 
 .parking-card-item {
   overflow: hidden;
@@ -948,7 +772,7 @@
 }
 
 
-/* ======================================== PARKING IMAGE ======================================== */
+/* Parking Image */
 
 .parking-image {
   position: relative;
@@ -959,7 +783,8 @@
   align-items: center;
   justify-content: center;
 
-  background: linear-gradient(135deg,
+  background:
+    linear-gradient(135deg,
       #cffafe,
       #ddd6fe,
       #e9d5ff);
@@ -1038,7 +863,8 @@
   }
 }
 
-/* ======================================== STATUS ======================================== */
+
+/* Parking Status */
 
 .parking-status {
   position: absolute;
@@ -1050,10 +876,226 @@
 
   color: #047857;
 
+  background: rgba(255, 255, 255, 0.75);
+
+  border-radius: 50px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* ======================================== TABLET ======================================== */
+
+@media (max-width: 1000px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+
+    padding: 75px 6%;
+
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 750px;
+
+    margin: auto;
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons,
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 900px) {
+  .parking-search-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+
+  .parking-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* ======================================== MOBILE ======================================== */
+
+@media (max-width: 600px) {
+  .hero-section {
+    min-height: auto;
+
+    padding: 60px 20px 70px;
+
+    gap: 35px;
+  }
+
+  .hero-content h1 {
+    font-size: 46px;
+
+    letter-spacing: -2px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .hero-primary-btn,
+  .hero-secondary-btn {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .hero-stats {
+    gap: 22px;
+  }
+
+  .hero-stat strong {
+    font-size: 20px;
+  }
+
+  .hero-stat span {
+    font-size: 10px;
+  }
+
+  .hero-visual {
+    min-height: 400px;
+  }
+
+  .parking-card {
+    width: 100%;
+
+    padding: 18px;
+
+    border-radius: 22px;
+  }
+
+  .parking-slot {
+    height: 65px;
+  }
+
+  .floating-card {
+    padding: 10px 12px;
+  }
+
+  .floating-card-one {
+    top: 20px;
+    right: -5px;
+  }
+
+  .floating-card-two {
+    bottom: 20px;
+    left: -5px;
+  }
+
+  .parking-search-section {
+    padding: 65px 20px;
+  }
+
+  .section-heading {
+    margin-bottom: 30px;
+  }
+
+  .section-heading h2 {
+    font-size: 34px;
+  }
+
+  .section-heading p {
+    font-size: 14px;
+  }
+
+  .parking-search-box {
+    grid-template-columns: 1fr;
+
+    padding: 18px;
+
+    border-radius: 18px;
+  }
+
+  .search-input,
+  .search-button {
+    min-height: 50px;
+  }
+
+  .featured-parking-section {
+    padding: 65px 20px;
+  }
+
+  .parking-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ======================================== SMALL MOBILE ======================================== */
+
+@media (max-width: 400px) {
+  .hero-content h1 {
+    font-size: 39px;
+  }
+
+  .hero-stats {
+    gap: 14px;
+  }
+
+  .parking-visual {
+    gap: 8px;
+  }
+
+  .parking-slot {
+    height: 55px;
+  }
+
+  .floating-card {
+    transform: scale(0.9);
+  }
+}
+
+/* ======================================== PARKING CARD ALIGNMENT ======================================== */
+
+.parking-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 360px));
+  justify-content: center;
+  gap: 28px;
+}
+
+/* ======================================== STATUS ======================================== */
+
+.parking-status {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+
+  padding: 6px 10px;
+
+  color: #047857;
   background: rgba(236, 253, 245, 0.9);
 
   border: 1px solid rgba(16, 185, 129, 0.15);
-
   border-radius: 50px;
 
   font-size: 11px;
@@ -1068,8 +1110,7 @@
   padding: 22px;
 }
 
-
-/* Title */
+/* ======================================== PARKING TITLE ======================================== */
 
 .parking-title {
   display: flex;
@@ -1084,7 +1125,6 @@
 
   font-size: 17px;
   font-weight: 750;
-
   line-height: 1.3;
 }
 
@@ -1097,8 +1137,7 @@
   font-weight: 700;
 }
 
-
-/* Location */
+/* ======================================== LOCATION ======================================== */
 
 .parking-location {
   margin-top: 9px;
@@ -1122,16 +1161,13 @@
   padding: 7px 9px;
 
   color: #64748b;
-
   background: #f8fafc;
 
   border: 1px solid #e2e8f0;
-
   border-radius: 8px;
 
   font-size: 10px;
 }
-
 
 /* ======================================== PARKING BOTTOM ======================================== */
 
@@ -1141,7 +1177,6 @@
   justify-content: space-between;
 
   margin-top: 22px;
-
   padding-top: 18px;
 
   border-top: 1px solid #eef2f7;
@@ -1178,11 +1213,9 @@
   padding: 9px 13px;
 
   color: #6366f1;
-
   background: rgba(99, 102, 241, 0.08);
 
   border: 1px solid rgba(99, 102, 241, 0.12);
-
   border-radius: 9px;
 
   font-size: 11px;
@@ -1203,7 +1236,6 @@
   box-shadow:
     0 8px 18px rgba(124, 58, 237, 0.2);
 }
-
 
 /* ======================================== VIEW ALL ======================================== */
 
@@ -1234,23 +1266,20 @@
 /* ======================================== TABLET ======================================== */
 
 @media (max-width: 950px) {
-
   .parking-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(300px, 360px));
   }
 }
-
 
 /* ======================================== MOBILE ======================================== */
 
 @media (max-width: 650px) {
-
   .featured-parking-section {
     padding: 65px 20px;
   }
 
   .parking-cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 360px);
     gap: 20px;
   }
 
@@ -1296,8 +1325,7 @@
   gap: 25px;
 }
 
-
-/* Connecting Line */
+/* ======================================== CONNECTING LINE ======================================== */
 
 .steps-container::before {
   content: "";
@@ -1370,7 +1398,6 @@
     0 25px 50px rgba(79, 70, 229, 0.13);
 }
 
-
 /* ======================================== STEP NUMBER ======================================== */
 
 .step-number {
@@ -1384,7 +1411,6 @@
   font-size: 11px;
   font-weight: 800;
 }
-
 
 /* ======================================== STEP ICON ======================================== */
 
@@ -1443,11 +1469,9 @@
   line-height: 1.7;
 }
 
-
 /* ======================================== TABLET ======================================== */
 
 @media (max-width: 950px) {
-
   .steps-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1460,7 +1484,6 @@
 /* ======================================== MOBILE ======================================== */
 
 @media (max-width: 600px) {
-
   .how-it-works-section {
     padding: 70px 20px;
   }
@@ -1494,7 +1517,6 @@
 
   overflow: hidden;
 }
-
 
 /* ======================================== FEATURES GRID ======================================== */
 
@@ -1534,9 +1556,6 @@
     border-color 0.35s ease;
 }
 
-
-/* Card Hover */
-
 .feature-card:hover {
   transform: translateY(-8px);
 
@@ -1545,7 +1564,6 @@
   box-shadow:
     0 25px 55px rgba(79, 70, 229, 0.13);
 }
-
 
 /* ======================================== CARD GLOW ======================================== */
 
@@ -1568,7 +1586,6 @@
 
   transition: all 0.4s ease;
 }
-
 
 .feature-card:hover::before {
   transform: scale(1.5);
@@ -1604,9 +1621,6 @@
   transition: all 0.35s ease;
 }
 
-
-/* Icon Hover */
-
 .feature-card:hover .feature-icon {
   transform:
     translateY(-4px) rotate(-5deg) scale(1.08);
@@ -1614,7 +1628,6 @@
   box-shadow:
     0 12px 25px rgba(124, 58, 237, 0.15);
 }
-
 
 /* ======================================== FEATURE TITLE ======================================== */
 
@@ -1626,7 +1639,6 @@
   font-size: 17px;
   font-weight: 750;
 }
-
 
 /* ======================================== FEATURE DESCRIPTION ======================================== */
 
@@ -1655,17 +1667,11 @@
     transform 0.3s ease;
 }
 
-
-/* Link Hover */
-
 .feature-link:hover {
   color: #0891b2;
 
   transform: translateX(5px);
 }
-
-
-/* ======================================== FEATURE LINK EFFECT ======================================== */
 
 .feature-card:hover .feature-link {
   letter-spacing: 0.2px;
@@ -1678,7 +1684,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 
 /* ======================================== MOBILE RESPONSIVE ======================================== */
 
@@ -1696,7 +1701,6 @@
     padding: 24px;
   }
 }
-
 
 /* ======================================== SMALL MOBILE ======================================== */
 
@@ -1719,6 +1723,7 @@
 
 .statistics-section {
   position: relative;
+
   padding: 100px 7%;
 
   background:
@@ -1732,7 +1737,6 @@
 
   overflow: hidden;
 }
-
 
 /* ======================================== STATISTICS GRID ======================================== */
 
@@ -1756,6 +1760,7 @@
 
   display: flex;
   align-items: center;
+
   gap: 16px;
 
   background: rgba(255, 255, 255, 0.72);
@@ -1776,9 +1781,6 @@
     border-color 0.35s ease;
 }
 
-
-/* Card Hover */
-
 .stat-card:hover {
   transform: translateY(-7px);
 
@@ -1787,7 +1789,6 @@
   box-shadow:
     0 25px 50px rgba(79, 70, 229, 0.13);
 }
-
 
 /* ======================================== CARD GLOW ======================================== */
 
@@ -1810,7 +1811,6 @@
 
   transition: all 0.4s ease;
 }
-
 
 .stat-card:hover::before {
   transform: scale(1.5);
@@ -1846,9 +1846,6 @@
   transition: all 0.35s ease;
 }
 
-
-/* Icon Hover */
-
 .stat-card:hover .stat-icon {
   transform:
     rotate(-6deg) scale(1.08);
@@ -1857,17 +1854,14 @@
     0 12px 25px rgba(124, 58, 237, 0.15);
 }
 
-
 /* ======================================== STAT CONTENT ======================================== */
 
 .stat-content {
   display: flex;
   flex-direction: column;
+
   gap: 5px;
 }
-
-
-/* Number */
 
 .stat-content strong {
   color: #1e293b;
@@ -1877,9 +1871,6 @@
 
   line-height: 1;
 }
-
-
-/* Label */
 
 .stat-content span {
   color: #64748b;
@@ -1904,13 +1895,9 @@
   transition: background-position 0.4s ease;
 }
 
-
-/* Number Gradient Animation */
-
 .stat-card:hover .stat-content strong {
   background-position: 100% center;
 }
-
 
 /* ======================================== STAT CARD SHINE ======================================== */
 
@@ -1935,28 +1922,21 @@
   transition: left 0.7s ease;
 }
 
-
 .stat-card:hover::after {
   left: 140%;
 }
 
-/* ========================================
-   TABLET RESPONSIVE
-======================================== */
+/* ======================================== TABLET RESPONSIVE ======================================== */
 
 @media (max-width: 950px) {
-
   .statistics-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
-
 
 /* ======================================== MOBILE RESPONSIVE ======================================== */
 
 @media (max-width: 650px) {
-
   .statistics-section {
     padding: 70px 20px;
   }
@@ -1969,14 +1949,11 @@
   .stat-card {
     padding: 24px 20px;
   }
-
 }
-
 
 /* ======================================== SMALL MOBILE ======================================== */
 
 @media (max-width: 400px) {
-
   .statistics-section {
     padding: 60px 16px;
   }
@@ -1991,7 +1968,6 @@
   .stat-content strong {
     font-size: 22px;
   }
-
 }
 
 /* ======================================== WHY CHOOSE PARKEASE ======================================== */
@@ -2013,7 +1989,6 @@
   overflow: hidden;
 }
 
-
 /* ======================================== MAIN CONTENT ======================================== */
 
 .why-parkease-content {
@@ -2024,6 +1999,7 @@
   grid-template-columns: 1fr 1fr;
 
   align-items: center;
+
   gap: 70px;
 }
 
@@ -2039,7 +2015,6 @@
   position: relative;
 }
 
-
 /* ======================================== PARKING ORBIT ======================================== */
 
 .parking-orbit {
@@ -2052,7 +2027,6 @@
   align-items: center;
   justify-content: center;
 }
-
 
 /* ======================================== ORBIT CIRCLE ======================================== */
 
@@ -2069,7 +2043,6 @@
   animation: orbitRotate 12s linear infinite;
 }
 
-
 @keyframes orbitRotate {
   from {
     transform: rotate(0deg);
@@ -2079,7 +2052,6 @@
     transform: rotate(360deg);
   }
 }
-
 
 /* ======================================== ORBIT GLOW ======================================== */
 
@@ -2101,7 +2073,6 @@
 
   animation: orbitPulse 4s ease-in-out infinite;
 }
-
 
 @keyframes orbitPulse {
 
@@ -2145,7 +2116,6 @@
   animation: carFloat 4s ease-in-out infinite;
 }
 
-
 @keyframes carFloat {
 
   0%,
@@ -2158,7 +2128,6 @@
   }
 }
 
-
 /* ======================================== WHY POINTS ======================================== */
 
 .why-parkease-points {
@@ -2167,7 +2136,6 @@
 
   gap: 18px;
 }
-
 
 /* ======================================== WHY POINT ======================================== */
 
@@ -2193,7 +2161,6 @@
     box-shadow 0.3s ease,
     border-color 0.3s ease;
 }
-
 
 .why-point:hover {
   transform: translateX(6px);
@@ -2232,16 +2199,13 @@
   transition: all 0.3s ease;
 }
 
-
-/* ======================================== ICON HOVER ======================================== */
-
 .why-point:hover .why-point-icon {
-  transform: rotate(-6deg) scale(1.08);
+  transform:
+    rotate(-6deg) scale(1.08);
 
   box-shadow:
     0 10px 22px rgba(124, 58, 237, 0.13);
 }
-
 
 /* ======================================== WHY POINT TITLE ======================================== */
 
@@ -2253,7 +2217,6 @@
   font-size: 15px;
   font-weight: 750;
 }
-
 
 /* ======================================== WHY POINT DESCRIPTION ======================================== */
 
@@ -2267,7 +2230,6 @@
 /* ======================================== TABLET RESPONSIVE ======================================== */
 
 @media (max-width: 950px) {
-
   .why-parkease-content {
     grid-template-columns: 1fr;
 
@@ -2281,16 +2243,14 @@
   .why-parkease-points {
     max-width: 700px;
     width: 100%;
+
     margin: auto;
   }
-
 }
-
 
 /* ======================================== MOBILE RESPONSIVE ======================================== */
 
 @media (max-width: 650px) {
-
   .why-parkease-section {
     padding: 70px 20px;
   }
@@ -2327,14 +2287,11 @@
 
     gap: 12px;
   }
-
 }
-
 
 /* ======================================== SMALL MOBILE ======================================== */
 
 @media (max-width: 400px) {
-
   .why-parkease-section {
     padding: 60px 16px;
   }
@@ -2374,8 +2331,8 @@
   .why-point p {
     font-size: 11px;
   }
-
 }
+
 /* ======================================== CTA SECTION ======================================== */
 
 .cta-section {
@@ -2384,26 +2341,19 @@
   padding: 110px 7%;
 
   background:
-    radial-gradient(
-      circle at 15% 50%,
+    radial-gradient(circle at 15% 50%,
       rgba(34, 211, 238, 0.18),
-      transparent 32%
-    ),
-    radial-gradient(
-      circle at 85% 50%,
+      transparent 32%),
+    radial-gradient(circle at 85% 50%,
       rgba(124, 58, 237, 0.18),
-      transparent 32%
-    ),
-    linear-gradient(
-      135deg,
+      transparent 32%),
+    linear-gradient(135deg,
       #ecfeff,
       #f5f3ff,
-      #faf5ff
-    );
+      #faf5ff);
 
   overflow: hidden;
 }
-
 
 /* ======================================== CTA CONTENT ======================================== */
 
@@ -2430,6 +2380,7 @@
   box-shadow:
     0 25px 60px rgba(79, 70, 229, 0.12);
 }
+
 /* ======================================== CTA BADGE ======================================== */
 
 .cta-badge {
@@ -2454,7 +2405,6 @@
     0 6px 18px rgba(79, 70, 229, 0.07);
 }
 
-
 /* ======================================== CTA HEADING ======================================== */
 
 .cta-content h2 {
@@ -2470,16 +2420,13 @@
   letter-spacing: -1px;
 }
 
-
 /* ======================================== CTA HEADING HIGHLIGHT ======================================== */
 
 .cta-content h2 strong {
-  background: linear-gradient(
-    90deg,
-    #0891b2,
-    #6366f1,
-    #7c3aed
-  );
+  background: linear-gradient(90deg,
+      #0891b2,
+      #6366f1,
+      #7c3aed);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2488,7 +2435,6 @@
 
   animation: ctaGradient 5s ease infinite;
 }
-
 
 @keyframes ctaGradient {
   0% {
@@ -2504,7 +2450,6 @@
   }
 }
 
-
 /* ======================================== CTA DESCRIPTION ======================================== */
 
 .cta-content p {
@@ -2516,6 +2461,7 @@
   font-size: 14px;
   line-height: 1.7;
 }
+
 /* ======================================== CTA ACTIONS ======================================== */
 
 .cta-actions {
@@ -2528,7 +2474,6 @@
   gap: 14px;
 }
 
-
 /* ======================================== CTA PRIMARY BUTTON ======================================== */
 
 .cta-primary-btn {
@@ -2539,12 +2484,10 @@
 
   color: #ffffff;
 
-  background: linear-gradient(
-    135deg,
-    #0891b2,
-    #6366f1,
-    #7c3aed
-  );
+  background: linear-gradient(135deg,
+      #0891b2,
+      #6366f1,
+      #7c3aed);
 
   border-radius: 12px;
 
@@ -2559,14 +2502,12 @@
     box-shadow 0.3s ease;
 }
 
-
 .cta-primary-btn:hover {
   transform: translateY(-4px);
 
   box-shadow:
     0 16px 32px rgba(99, 102, 241, 0.32);
 }
-
 
 /* ======================================== CTA PRIMARY SHINE ======================================== */
 
@@ -2588,10 +2529,10 @@
   transition: left 0.6s ease;
 }
 
-
 .cta-primary-btn:hover::before {
   left: 140%;
 }
+
 /* ======================================== CTA SECONDARY BUTTON ======================================== */
 
 .cta-secondary-btn {
@@ -2619,7 +2560,6 @@
     box-shadow 0.3s ease;
 }
 
-
 .cta-secondary-btn:hover {
   transform: translateY(-4px);
 
@@ -2632,7 +2572,6 @@
   box-shadow:
     0 12px 25px rgba(79, 70, 229, 0.10);
 }
-
 
 /* ======================================== CTA DECORATIVE GLOW ======================================== */
 
@@ -2656,7 +2595,6 @@
   animation: ctaGlowMove 6s ease-in-out infinite;
 }
 
-
 .cta-section::after {
   content: "";
 
@@ -2677,21 +2615,23 @@
   animation: ctaGlowMove 7s ease-in-out infinite reverse;
 }
 
-
 @keyframes ctaGlowMove {
+
   0%,
   100% {
-    transform: translate(0, 0) scale(1);
+    transform:
+      translate(0, 0) scale(1);
   }
 
   50% {
-    transform: translate(25px, 20px) scale(1.15);
+    transform:
+      translate(25px, 20px) scale(1.15);
   }
 }
+
 /* ======================================== TABLET RESPONSIVE ======================================== */
 
 @media (max-width: 768px) {
-
   .cta-section {
     padding: 85px 5%;
   }
@@ -2703,14 +2643,11 @@
   .cta-content h2 {
     font-size: 34px;
   }
-
 }
-
 
 /* ======================================== MOBILE RESPONSIVE ======================================== */
 
 @media (max-width: 600px) {
-
   .cta-section {
     padding: 70px 20px;
   }
@@ -2746,14 +2683,11 @@
     align-items: center;
     justify-content: center;
   }
-
 }
-
 
 /* ======================================== SMALL MOBILE ======================================== */
 
 @media (max-width: 400px) {
-
   .cta-section {
     padding: 60px 16px;
   }
@@ -2769,5 +2703,4 @@
   .cta-badge {
     font-size: 11px;
   }
-
 }

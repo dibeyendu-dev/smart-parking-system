@@ -6,22 +6,23 @@ function Home() {
     <main className="home-page">
 
       {/* ================= HERO ================= */}
+
       <section className="hero-section">
 
         <div className="hero-content">
 
           <span className="hero-badge">
-            ✦ Smart Parking Solution
+            ✦ Smart Mall Parking
           </span>
 
           <h1>
             Find Your Perfect
-            <span> Parking Spot</span>
+            <span> Mall Parking Spot</span>
           </h1>
 
           <p>
-            Discover, reserve and manage your parking
-            effortlessly with our smart parking platform.
+            Find, check and reserve an available parking
+            spot inside the mall quickly and easily.
           </p>
 
           <div className="hero-buttons">
@@ -39,18 +40,18 @@ function Home() {
           <div className="hero-stats">
 
             <div className="hero-stat">
-              <strong>500+</strong>
+              <strong>32</strong>
               <span>Parking Spots</span>
             </div>
 
             <div className="hero-stat">
-              <strong>50+</strong>
-              <span>Parking Areas</span>
+              <strong>3</strong>
+              <span>Parking Floors</span>
             </div>
 
             <div className="hero-stat">
-              <strong>10K+</strong>
-              <span>Happy Users</span>
+              <strong>24/7</strong>
+              <span>Availability</span>
             </div>
 
           </div>
@@ -58,15 +59,24 @@ function Home() {
         </div>
 
 
-        {/* Hero Visual */}
+        {/* ================= HERO VISUAL ================= */}
+
         <div className="hero-visual">
 
           <div className="parking-card">
 
             <div className="parking-card-header">
-              <span>Live Availability</span>
-              <span className="live-status">● Live</span>
+
+              <span>
+                Mall Parking Availability
+              </span>
+
+              <span className="live-status">
+                ● Live
+              </span>
+
             </div>
+
 
             <div className="parking-visual">
 
@@ -96,101 +106,182 @@ function Home() {
 
             </div>
 
+
             <div className="parking-card-footer">
-              <span>Available Slots</span>
-              <strong>4 / 6</strong>
+
+              <span>
+                Available Slots
+              </span>
+
+              <strong>
+                4 / 6
+              </strong>
+
             </div>
 
           </div>
 
 
-          {/* Floating Cards */}
+          {/* Floating Card 1 */}
 
           <div className="floating-card floating-card-one">
+
             <span>⚡</span>
+
             <div>
-              <strong>Quick Booking</strong>
-              <small>Reserve in seconds</small>
+
+              <strong>
+                Quick Booking
+              </strong>
+
+              <small>
+                Reserve in seconds
+              </small>
+
             </div>
+
           </div>
 
+
+          {/* Floating Card 2 */}
+
           <div className="floating-card floating-card-two">
+
             <span>₹</span>
+
             <div>
-              <strong>From ₹20/hr</strong>
-              <small>Affordable parking</small>
+
+              <strong>
+                From ₹20/hr
+              </strong>
+
+              <small>
+                Affordable parking
+              </small>
+
             </div>
+
           </div>
 
         </div>
 
       </section>
+
+
       {/* ================= PARKING SEARCH ================= */}
+
       <section className="parking-search-section">
 
         <div className="section-heading">
-          <span>✦ Find Your Spot</span>
+
+          <span>
+            ✦ Find Your Spot
+          </span>
 
           <h2>
-            Find Parking That
-            <strong> Fits You</strong>
+            Find Parking Inside
+            <strong> Our Mall</strong>
           </h2>
 
           <p>
-            Search for available parking spaces,
-            choose your preferred location and book instantly.
+            Check available parking slots inside the mall
+            and reserve your preferred spot.
           </p>
+
         </div>
 
 
         <div className="parking-search-box">
 
           {/* Location */}
+
           <div className="search-field">
-            <label>Location</label>
+
+            <label>
+              Location
+            </label>
 
             <div className="search-input">
-              <span>📍</span>
+
+              <span>
+                📍
+              </span>
+
               <input
                 type="text"
-                placeholder="Enter parking location"
+                value="City Mall, Kolkata"
+                readOnly
               />
+
             </div>
+
           </div>
 
 
           {/* Date */}
+
           <div className="search-field">
-            <label>Date</label>
+
+            <label>
+              Date
+            </label>
 
             <div className="search-input">
-              <span>📅</span>
+
+              <span>
+                📅
+              </span>
 
               <input
                 type="date"
               />
+
             </div>
+
           </div>
 
 
           {/* Vehicle */}
+
           <div className="search-field">
-            <label>Vehicle Type</label>
+
+            <label>
+              Vehicle Type
+            </label>
 
             <div className="search-input">
-              <span>🚗</span>
 
-              <select>
-                <option value="">Select vehicle</option>
-                <option value="car">Car</option>
-                <option value="bike">Bike</option>
-                <option value="suv">SUV</option>
+              <span>
+                🚗
+              </span>
+
+              <select defaultValue="">
+
+                <option value="">
+                  Select vehicle
+                </option>
+
+                <option value="bike">
+                  Bike
+                </option>
+
+                <option value="car">
+                  Car
+                </option>
+
+                <option value="suv">
+                  SUV
+                </option>
+
               </select>
+
             </div>
+
           </div>
 
 
           {/* Search Button */}
+
           <Link
             to="/search"
             className="search-button"
@@ -201,20 +292,25 @@ function Home() {
         </div>
 
       </section>
+
+
       {/* ================= FEATURED PARKING ================= */}
+
       <section className="featured-parking-section">
 
         <div className="section-heading">
 
-          <span>✦ Popular Parking</span>
+          <span>
+            ✦ Mall Parking
+          </span>
 
           <h2>
-            Featured <strong>Parking Spots</strong>
+            Our <strong>Smart Parking Area</strong>
           </h2>
 
           <p>
-            Explore popular parking areas with
-            convenient locations and affordable rates.
+            One smart parking system for easy and
+            convenient parking inside the mall.
           </p>
 
         </div>
@@ -222,110 +318,13 @@ function Home() {
 
         <div className="parking-cards">
 
-          {/* Parking Card 1 */}
+
+          {/* ================= MALL PARKING CARD ================= */}
+
           <div className="parking-card-item">
 
             <div className="parking-image">
-              <span className="parking-status">
-                ● Available
-              </span>
 
-              <span className="parking-icon">
-                🚗
-              </span>
-            </div>
-
-            <div className="parking-info">
-
-              <div className="parking-title">
-                <h3>City Center Parking</h3>
-                <span>⭐ 4.8</span>
-              </div>
-
-              <p className="parking-location">
-                📍 Central Avenue, Kolkata
-              </p>
-
-              <div className="parking-details">
-                <span>🅿️ 24 Slots</span>
-                <span>🚗 Car & Bike</span>
-              </div>
-
-              <div className="parking-bottom">
-
-                <div>
-                  <small>Starting from</small>
-                  <strong>₹40<span>/hr</span></strong>
-                </div>
-
-                <Link
-                  to="/search"
-                  className="view-parking-btn"
-                >
-                  View Parking
-                </Link>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-          {/* Parking Card 2 */}
-          <div className="parking-card-item">
-
-            <div className="parking-image">
-              <span className="parking-status">
-                ● Available
-              </span>
-
-              <span className="parking-icon">
-                🏢
-              </span>
-            </div>
-
-            <div className="parking-info">
-
-              <div className="parking-title">
-                <h3>Metro Station Parking</h3>
-                <span>⭐ 4.7</span>
-              </div>
-
-              <p className="parking-location">
-                📍 Park Street, Kolkata
-              </p>
-
-              <div className="parking-details">
-                <span>🅿️ 18 Slots</span>
-                <span>🚗 Car & Bike</span>
-              </div>
-
-              <div className="parking-bottom">
-
-                <div>
-                  <small>Starting from</small>
-                  <strong>₹30<span>/hr</span></strong>
-                </div>
-
-                <Link
-                  to="/search"
-                  className="view-parking-btn"
-                >
-                  View Parking
-                </Link>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-          {/* Parking Card 3 */}
-          <div className="parking-card-item">
-
-            <div className="parking-image">
               <span className="parking-status">
                 ● Available
               </span>
@@ -333,30 +332,69 @@ function Home() {
               <span className="parking-icon">
                 🏬
               </span>
+
             </div>
+
 
             <div className="parking-info">
 
               <div className="parking-title">
-                <h3>Mall Parking Zone</h3>
-                <span>⭐ 4.9</span>
+
+                <h3>
+                  City Mall Parking
+                </h3>
+
+                <span>
+                  ⭐ 4.9
+                </span>
+
               </div>
+
 
               <p className="parking-location">
-                📍 Salt Lake, Kolkata
+                📍 City Mall, Kolkata
               </p>
 
+
               <div className="parking-details">
-                <span>🅿️ 32 Slots</span>
-                <span>🚗 All Vehicles</span>
+
+                <span>
+                  🅿️ 32 Slots
+                </span>
+
+                <span>
+                  🚗 All Vehicles
+                </span>
+
               </div>
+
 
               <div className="parking-bottom">
 
                 <div>
-                  <small>Starting from</small>
-                  <strong>₹50<span>/hr</span></strong>
+
+                  <small>
+                    Parking Price
+                  </small>
+
+                  <strong
+                    style={{
+                      display: "block",
+                      fontSize: "14px",
+                      lineHeight: "1.8"
+                    }}
+                  >
+                    🏍️ ₹20/hr
+                    <br />
+
+                    🚗 ₹40/hr
+                    <br />
+
+                    🚙 ₹60/hr
+                  </strong>
+
                 </div>
+
 
                 <Link
                   to="/search"
@@ -374,39 +412,49 @@ function Home() {
         </div>
 
 
-        {/* View All */}
+        {/* View Parking */}
+
         <div className="featured-action">
 
           <Link
             to="/search"
             className="view-all-parking"
           >
-            View All Parking →
+            View Parking →
           </Link>
 
         </div>
 
       </section>
+
+
       {/* ================= HOW IT WORKS ================= */}
+
       <section className="how-it-works-section">
 
         <div className="section-heading">
 
-          <span>✦ Simple Process</span>
+          <span>
+            ✦ Simple Process
+          </span>
 
           <h2>
-            How <strong>ParkEase</strong> Works
+            How <strong>Smart Parking</strong> Works
           </h2>
 
           <p>
-            Find, book and manage your parking spot
+            Find and reserve your mall parking spot
             in just a few simple steps.
           </p>
 
         </div>
+
+
         <div className="steps-container">
 
+
           {/* Step 1 */}
+
           <div className="step-card">
 
             <div className="step-number">
@@ -417,17 +465,20 @@ function Home() {
               📍
             </div>
 
-            <h3>Find Parking</h3>
+            <h3>
+              Select Mall
+            </h3>
 
             <p>
-              Search for nearby parking areas
-              based on your location and needs.
+              Select our mall parking area
+              to check available parking slots.
             </p>
 
           </div>
 
 
           {/* Step 2 */}
+
           <div className="step-card">
 
             <div className="step-number">
@@ -438,16 +489,20 @@ function Home() {
               🅿️
             </div>
 
-            <h3>Choose Your Spot</h3>
+            <h3>
+              Choose Slot
+            </h3>
+
             <p>
-              Check available slots, prices and
-              choose the perfect parking space.
+              Check live availability and
+              select your preferred parking slot.
             </p>
 
           </div>
 
 
           {/* Step 3 */}
+
           <div className="step-card">
 
             <div className="step-number">
@@ -458,16 +513,20 @@ function Home() {
               📅
             </div>
 
-            <h3>Book & Pay</h3>
+            <h3>
+              Book & Pay
+            </h3>
 
             <p>
-              Select your vehicle, date and time,
-              then complete your booking securely.
+              Select your vehicle, date and
+              complete your parking booking.
             </p>
 
           </div>
 
+
           {/* Step 4 */}
+
           <div className="step-card">
 
             <div className="step-number">
@@ -478,11 +537,13 @@ function Home() {
               🚗
             </div>
 
-            <h3>Park & Enjoy</h3>
+            <h3>
+              Park Easily
+            </h3>
 
             <p>
-              Arrive at your parking spot, park
-              easily and manage your booking.
+              Arrive at the mall and park
+              in your reserved parking spot.
             </p>
 
           </div>
@@ -490,139 +551,190 @@ function Home() {
         </div>
 
       </section>
+
+
       {/* ================= KEY FEATURES ================= */}
+
       <section className="features-section">
 
         <div className="section-heading">
 
-          <span>✦ Powerful Features</span>
+          <span>
+            ✦ Smart Features
+          </span>
 
           <h2>
             Everything You Need for
-            <strong> Smart Parking</strong>
+            <strong> Mall Parking</strong>
           </h2>
 
           <p>
-            Experience a smarter, easier and more
-            convenient way to find and manage parking.
+            A simple smart parking system designed
+            specifically for our mall.
           </p>
 
         </div>
 
+
         <div className="features-grid">
 
+
           {/* Feature 1 */}
+
           <div className="feature-card">
 
             <div className="feature-icon">
               🔎
             </div>
 
-            <h3>Smart Search</h3>
+            <h3>
+              Smart Search
+            </h3>
 
             <p>
-              Quickly find nearby parking spaces
-              based on location and availability.
+              Quickly check available parking
+              slots inside the mall.
             </p>
 
-            <Link to="/search" className="feature-link">
+            <Link
+              to="/search"
+              className="feature-link"
+            >
               Find Parking →
             </Link>
 
           </div>
 
+
           {/* Feature 2 */}
+
           <div className="feature-card">
 
             <div className="feature-icon">
               ⚡
             </div>
 
-            <h3>Live Availability</h3>
+            <h3>
+              Live Availability
+            </h3>
 
             <p>
-              Check available parking slots in
-              real-time before making a booking.
+              Check which parking slots are
+              available or occupied.
             </p>
 
-            <Link to="/search" className="feature-link">
+            <Link
+              to="/search"
+              className="feature-link"
+            >
               Check Availability →
             </Link>
 
           </div>
+
+
           {/* Feature 3 */}
+
           <div className="feature-card">
 
             <div className="feature-icon">
               📅
             </div>
 
-            <h3>Easy Booking</h3>
+            <h3>
+              Easy Booking
+            </h3>
 
             <p>
-              Reserve your preferred parking spot
-              with just a few simple steps.
+              Reserve your preferred mall
+              parking slot easily.
             </p>
 
-            <Link to="/search" className="feature-link">
+            <Link
+              to="/search"
+              className="feature-link"
+            >
               Book a Spot →
             </Link>
 
           </div>
 
+
           {/* Feature 4 */}
+
           <div className="feature-card">
 
             <div className="feature-icon">
               💰
             </div>
 
-            <h3>Smart Pricing</h3>
+            <h3>
+              Smart Pricing
+            </h3>
 
             <p>
-              Calculate parking charges based on
-              vehicle type and parking duration.
+              View parking charges according
+              to your vehicle type.
             </p>
 
-            <Link to="/search" className="feature-link">
+            <Link
+              to="/search"
+              className="feature-link"
+            >
               View Pricing →
             </Link>
 
           </div>
 
+
           {/* Feature 5 */}
+
           <div className="feature-card">
 
             <div className="feature-icon">
               🗺️
             </div>
 
-            <h3>Location Based</h3>
+            <h3>
+              Parking Map
+            </h3>
 
             <p>
-              Discover convenient parking areas
-              around your selected location.
+              Easily locate your parking area
+              inside the mall.
             </p>
 
-            <Link to="/search" className="feature-link">
-              Explore Locations →
+            <Link
+              to="/search"
+              className="feature-link"
+            >
+              View Parking →
             </Link>
 
           </div>
+
+
           {/* Feature 6 */}
+
           <div className="feature-card">
 
             <div className="feature-icon">
               🔐
             </div>
 
-            <h3>Secure Platform</h3>
+            <h3>
+              Secure Booking
+            </h3>
 
             <p>
-              Your account and booking information
-              are protected with secure access.
+              Keep your account and booking
+              information protected.
             </p>
-            <Link to="/register" className="feature-link">
+
+            <Link
+              to="/register"
+              className="feature-link"
+            >
               Get Started →
             </Link>
 
@@ -631,20 +743,26 @@ function Home() {
         </div>
 
       </section>
+
+
       {/* ================= STATISTICS ================= */}
+
       <section className="statistics-section">
 
         <div className="section-heading">
 
-          <span>✦ ParkEase In Numbers</span>
+          <span>
+            ✦ Our Parking System
+          </span>
 
           <h2>
-            Parking Made <strong>Better</strong>
+            Smart Parking Made
+            <strong> Simple</strong>
           </h2>
 
           <p>
-            Trusted by users and parking providers
-            for a smoother parking experience.
+            A dedicated parking solution for
+            our mall visitors.
           </p>
 
         </div>
@@ -652,7 +770,7 @@ function Home() {
 
         <div className="statistics-grid">
 
-          {/* Stat 1 */}
+
           <div className="stat-card">
 
             <div className="stat-icon">
@@ -660,44 +778,62 @@ function Home() {
             </div>
 
             <div className="stat-content">
-              <strong>500+</strong>
-              <span>Parking Spots</span>
+
+              <strong>
+                32
+              </strong>
+
+              <span>
+                Parking Spots
+              </span>
+
             </div>
 
           </div>
 
 
-          {/* Stat 2 */}
           <div className="stat-card">
 
             <div className="stat-icon">
-              📍
+              🏬
             </div>
 
             <div className="stat-content">
-              <strong>50+</strong>
-              <span>Parking Locations</span>
+
+              <strong>
+                1
+              </strong>
+
+              <span>
+                Mall Location
+              </span>
+
             </div>
 
           </div>
 
 
-          {/* Stat 3 */}
           <div className="stat-card">
 
             <div className="stat-icon">
-              👥
+              🚗
             </div>
 
             <div className="stat-content">
-              <strong>10K+</strong>
-              <span>Happy Users</span>
+
+              <strong>
+                3
+              </strong>
+
+              <span>
+                Vehicle Types
+              </span>
+
             </div>
 
           </div>
 
 
-          {/* Stat 4 */}
           <div className="stat-card">
 
             <div className="stat-icon">
@@ -705,8 +841,15 @@ function Home() {
             </div>
 
             <div className="stat-content">
-              <strong>4.8/5</strong>
-              <span>Average Rating</span>
+
+              <strong>
+                4.9/5
+              </strong>
+
+              <span>
+                Parking Rating
+              </span>
+
             </div>
 
           </div>
@@ -714,12 +857,17 @@ function Home() {
         </div>
 
       </section>
-      {/* ================= WHY CHOOSE PARKEASE ================= */}
+
+
+      {/* ================= WHY CHOOSE ================= */}
+
       <section className="why-parkease-section">
 
         <div className="section-heading">
 
-          <span>✦ Why ParkEase</span>
+          <span>
+            ✦ Why Smart Parking
+          </span>
 
           <h2>
             Parking Made
@@ -727,8 +875,8 @@ function Home() {
           </h2>
 
           <p>
-            Everything is designed to make your
-            parking experience faster and easier.
+            Our system makes parking inside the mall
+            faster, easier and more convenient.
           </p>
 
         </div>
@@ -736,12 +884,15 @@ function Home() {
 
         <div className="why-parkease-content">
 
+
           {/* Left Side */}
+
           <div className="why-parkease-visual">
 
             <div className="parking-orbit">
 
-              <div className="orbit-circle"></div>
+              <div className="orbit-circle">
+              </div>
 
               <div className="orbit-car">
                 🚗
@@ -753,7 +904,9 @@ function Home() {
 
 
           {/* Right Side */}
+
           <div className="why-parkease-points">
+
 
             <div className="why-point">
 
@@ -762,12 +915,16 @@ function Home() {
               </div>
 
               <div>
-                <h3>Save Your Time</h3>
+
+                <h3>
+                  Save Time
+                </h3>
 
                 <p>
                   Find an available parking spot
-                  without wasting time searching.
+                  without searching manually.
                 </p>
+
               </div>
 
             </div>
@@ -780,12 +937,16 @@ function Home() {
               </div>
 
               <div>
-                <h3>Transparent Pricing</h3>
+
+                <h3>
+                  Clear Pricing
+                </h3>
 
                 <p>
-                  Know your parking cost based on
-                  vehicle type and parking duration.
+                  Know the parking cost before
+                  booking your slot.
                 </p>
+
               </div>
 
             </div>
@@ -798,12 +959,16 @@ function Home() {
               </div>
 
               <div>
-                <h3>Easy Management</h3>
+
+                <h3>
+                  Easy Booking
+                </h3>
 
                 <p>
-                  Manage your bookings and parking
-                  details from one simple dashboard.
+                  Manage your mall parking booking
+                  from one simple platform.
                 </p>
+
               </div>
 
             </div>
@@ -816,12 +981,16 @@ function Home() {
               </div>
 
               <div>
-                <h3>Secure Booking</h3>
+
+                <h3>
+                  Secure System
+                </h3>
 
                 <p>
                   Your account and booking details
-                  stay protected with secure access.
+                  remain protected.
                 </p>
+
               </div>
 
             </div>
@@ -831,7 +1000,10 @@ function Home() {
         </div>
 
       </section>
-      {/* ================= CTA SECTION ================= */}
+
+
+      {/* ================= CTA ================= */}
+
       <section className="cta-section">
 
         <div className="cta-content">
@@ -842,12 +1014,12 @@ function Home() {
 
           <h2>
             Ready to Find Your
-            <strong> Perfect Parking Spot?</strong>
+            <strong> Mall Parking Spot?</strong>
           </h2>
 
           <p>
-            Find available parking, check pricing,
-            and reserve your spot in just a few clicks.
+            Check available parking slots and
+            reserve your spot in just a few clicks.
           </p>
 
           <div className="cta-actions">
@@ -871,6 +1043,7 @@ function Home() {
         </div>
 
       </section>
+
     </main>
   );
 }
