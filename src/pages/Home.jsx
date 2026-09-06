@@ -831,6 +831,46 @@ function Home() {
         </div>
 
       </section>
+      {/* ================= CTA SECTION ================= */}
+      <section className="cta-section">
+
+        <div className="cta-content">
+
+          <span className="cta-badge">
+            ✦ Start Parking Smarter
+          </span>
+
+          <h2>
+            Ready to Find Your
+            <strong> Perfect Parking Spot?</strong>
+          </h2>
+
+          <p>
+            Find available parking, check pricing,
+            and reserve your spot in just a few clicks.
+          </p>
+
+          <div className="cta-actions">
+
+            <Link
+              to="/search"
+              className="cta-primary-btn"
+            >
+              Find Parking →
+            </Link>
+
+            <Link
+              to="/register"
+              className="cta-secondary-btn"
+            >
+              Create Account
+            </Link>
+
+          </div>
+
+        </div>
+
+      </section>
     </main>
   );
 }
