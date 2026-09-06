@@ -1943,3 +1943,56 @@
 .stat-card:hover::after {
   left: 140%;
 }
+/* ========================================
+   TABLET RESPONSIVE
+======================================== */
+
+@media (max-width: 950px) {
+
+  .statistics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ======================================== MOBILE RESPONSIVE ======================================== */
+
+@media (max-width: 650px) {
+
+  .statistics-section {
+    padding: 70px 20px;
+  }
+
+  .statistics-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .stat-card {
+    padding: 24px 20px;
+  }
+
+}
+
+
+/* ======================================== SMALL MOBILE ======================================== */
+
+@media (max-width: 400px) {
+
+  .statistics-section {
+    padding: 60px 16px;
+  }
+
+  .stat-icon {
+    width: 54px;
+    height: 54px;
+
+    font-size: 23px;
+  }
+
+  .stat-content strong {
+    font-size: 22px;
+  }
+
+}
