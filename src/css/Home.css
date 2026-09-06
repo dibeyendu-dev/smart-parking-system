@@ -2516,3 +2516,79 @@
   font-size: 14px;
   line-height: 1.7;
 }
+/* ======================================== CTA ACTIONS ======================================== */
+
+.cta-actions {
+  margin-top: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+}
+
+
+/* ======================================== CTA PRIMARY BUTTON ======================================== */
+
+.cta-primary-btn {
+  position: relative;
+  overflow: hidden;
+
+  padding: 13px 22px;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #0891b2,
+    #6366f1,
+    #7c3aed
+  );
+
+  border-radius: 12px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  box-shadow:
+    0 10px 25px rgba(99, 102, 241, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.cta-primary-btn:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 16px 32px rgba(99, 102, 241, 0.32);
+}
+
+
+/* ======================================== CTA PRIMARY SHINE ======================================== */
+
+.cta-primary-btn::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -120%;
+
+  width: 80%;
+  height: 100%;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  transform: skewX(-20deg);
+
+  transition: left 0.6s ease;
+}
+
+
+.cta-primary-btn:hover::before {
+  left: 140%;
+}
