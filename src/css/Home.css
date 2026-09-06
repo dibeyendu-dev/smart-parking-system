@@ -1745,6 +1745,7 @@
 
   gap: 20px;
 }
+
 /* ======================================== STAT CARD ======================================== */
 
 .stat-card {
@@ -1816,6 +1817,7 @@
 
   background: rgba(124, 58, 237, 0.14);
 }
+
 /* ======================================== STAT ICON ======================================== */
 
 .stat-icon {
@@ -1830,11 +1832,9 @@
 
   font-size: 25px;
 
-  background: linear-gradient(
-    135deg,
-    rgba(34, 211, 238, 0.12),
-    rgba(139, 92, 246, 0.14)
-  );
+  background: linear-gradient(135deg,
+      rgba(34, 211, 238, 0.12),
+      rgba(139, 92, 246, 0.14));
 
   border: 1px solid rgba(139, 92, 246, 0.12);
 
@@ -1851,8 +1851,7 @@
 
 .stat-card:hover .stat-icon {
   transform:
-    rotate(-6deg)
-    scale(1.08);
+    rotate(-6deg) scale(1.08);
 
   box-shadow:
     0 12px 25px rgba(124, 58, 237, 0.15);
@@ -1888,15 +1887,14 @@
   font-size: 11px;
   font-weight: 600;
 }
+
 /* ======================================== STAT NUMBER EFFECT ======================================== */
 
 .stat-content strong {
-  background: linear-gradient(
-    90deg,
-    #0891b2,
-    #6366f1,
-    #7c3aed
-  );
+  background: linear-gradient(90deg,
+      #0891b2,
+      #6366f1,
+      #7c3aed);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1927,12 +1925,10 @@
   width: 70%;
   height: 100%;
 
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.35),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.35),
+      transparent);
 
   transform: skewX(-20deg);
 
@@ -1943,6 +1939,7 @@
 .stat-card:hover::after {
   left: 140%;
 }
+
 /* ========================================
    TABLET RESPONSIVE
 ======================================== */
@@ -1996,6 +1993,7 @@
   }
 
 }
+
 /* ======================================== WHY CHOOSE PARKEASE ======================================== */
 
 .why-parkease-section {
@@ -2004,16 +2002,12 @@
   padding: 100px 7%;
 
   background:
-    radial-gradient(
-      circle at 5% 50%,
+    radial-gradient(circle at 5% 50%,
       rgba(34, 211, 238, 0.10),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 95% 50%,
+      transparent 30%),
+    radial-gradient(circle at 95% 50%,
       rgba(124, 58, 237, 0.10),
-      transparent 30%
-    ),
+      transparent 30%),
     #f8fafc;
 
   overflow: hidden;
@@ -2032,6 +2026,7 @@
   align-items: center;
   gap: 70px;
 }
+
 /* ======================================== PARKING VISUAL ======================================== */
 
 .why-parkease-visual {
@@ -2096,11 +2091,9 @@
   width: 190px;
   height: 190px;
 
-  background: linear-gradient(
-    135deg,
-    rgba(34, 211, 238, 0.15),
-    rgba(124, 58, 237, 0.15)
-  );
+  background: linear-gradient(135deg,
+      rgba(34, 211, 238, 0.15),
+      rgba(124, 58, 237, 0.15));
 
   border-radius: 50%;
 
@@ -2111,6 +2104,7 @@
 
 
 @keyframes orbitPulse {
+
   0%,
   100% {
     transform: scale(1);
@@ -2120,6 +2114,7 @@
     transform: scale(1.12);
   }
 }
+
 /* ======================================== ORBIT CAR ======================================== */
 
 .orbit-car {
@@ -2152,6 +2147,7 @@
 
 
 @keyframes carFloat {
+
   0%,
   100% {
     transform: translateY(0);
@@ -2207,6 +2203,7 @@
   box-shadow:
     0 12px 30px rgba(79, 70, 229, 0.09);
 }
+
 /* ======================================== WHY POINT ICON ======================================== */
 
 .why-point-icon {
@@ -2221,11 +2218,9 @@
 
   font-size: 21px;
 
-  background: linear-gradient(
-    135deg,
-    rgba(34, 211, 238, 0.12),
-    rgba(139, 92, 246, 0.14)
-  );
+  background: linear-gradient(135deg,
+      rgba(34, 211, 238, 0.12),
+      rgba(139, 92, 246, 0.14));
 
   border: 1px solid rgba(139, 92, 246, 0.12);
 
@@ -2267,4 +2262,117 @@
 
   font-size: 12px;
   line-height: 1.65;
+}
+
+/* ======================================== TABLET RESPONSIVE ======================================== */
+
+@media (max-width: 950px) {
+
+  .why-parkease-content {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .why-parkease-visual {
+    min-height: 320px;
+  }
+
+  .why-parkease-points {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+  }
+
+}
+
+
+/* ======================================== MOBILE RESPONSIVE ======================================== */
+
+@media (max-width: 650px) {
+
+  .why-parkease-section {
+    padding: 70px 20px;
+  }
+
+  .why-parkease-content {
+    gap: 35px;
+  }
+
+  .why-parkease-visual {
+    min-height: 280px;
+  }
+
+  .parking-orbit {
+    width: 230px;
+    height: 230px;
+  }
+
+  .orbit-circle {
+    width: 215px;
+    height: 215px;
+  }
+
+  .orbit-car {
+    width: 95px;
+    height: 95px;
+
+    font-size: 43px;
+
+    border-radius: 25px;
+  }
+
+  .why-point {
+    padding: 16px;
+
+    gap: 12px;
+  }
+
+}
+
+
+/* ======================================== SMALL MOBILE ======================================== */
+
+@media (max-width: 400px) {
+
+  .why-parkease-section {
+    padding: 60px 16px;
+  }
+
+  .why-parkease-visual {
+    min-height: 250px;
+  }
+
+  .parking-orbit {
+    width: 200px;
+    height: 200px;
+  }
+
+  .orbit-circle {
+    width: 190px;
+    height: 190px;
+  }
+
+  .orbit-car {
+    width: 85px;
+    height: 85px;
+
+    font-size: 38px;
+  }
+
+  .why-point-icon {
+    width: 44px;
+    height: 44px;
+
+    font-size: 19px;
+  }
+
+  .why-point h3 {
+    font-size: 14px;
+  }
+
+  .why-point p {
+    font-size: 11px;
+  }
+
 }
