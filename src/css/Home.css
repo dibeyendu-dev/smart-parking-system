@@ -1888,3 +1888,58 @@
   font-size: 11px;
   font-weight: 600;
 }
+/* ======================================== STAT NUMBER EFFECT ======================================== */
+
+.stat-content strong {
+  background: linear-gradient(
+    90deg,
+    #0891b2,
+    #6366f1,
+    #7c3aed
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-size: 200% auto;
+
+  transition: background-position 0.4s ease;
+}
+
+
+/* Number Gradient Animation */
+
+.stat-card:hover .stat-content strong {
+  background-position: 100% center;
+}
+
+
+/* ======================================== STAT CARD SHINE ======================================== */
+
+.stat-card::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -120%;
+
+  width: 70%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+
+  transition: left 0.7s ease;
+}
+
+
+.stat-card:hover::after {
+  left: 140%;
+}
