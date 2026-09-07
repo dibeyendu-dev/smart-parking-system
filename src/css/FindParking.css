@@ -54,6 +54,7 @@
 
     color: #343539;
 }
+
 /* ======================================== SEARCH SECTION ======================================== */
 
 .find-parking-search {
@@ -76,4 +77,22 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
 
     box-sizing: border-box;
+}
+
+/* Search Field */
+.search-field {
+    width: 100%;
+}
+
+
+/* Label */
+.search-field label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #374151;
 }
