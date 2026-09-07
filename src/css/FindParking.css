@@ -116,3 +116,49 @@
 
     transition: 0.3s ease;
 }
+
+/* Input Icon */
+.search-input>span {
+    margin-right: 10px;
+
+    font-size: 18px;
+}
+
+
+/* Input */
+.search-input input,
+.search-input select {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    font-family: inherit;
+}
+
+
+/* Input Focus */
+.search-input:focus-within {
+    border-color: #16a34a;
+
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+}
+
+
+/* Select */
+.search-input select {
+    cursor: pointer;
+}
+
+
+/* Readonly Location */
+.search-input input[readonly] {
+    cursor: default;
+}
