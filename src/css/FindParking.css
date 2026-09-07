@@ -12,3 +12,17 @@
     max-width: 750px;
     margin: 0 auto 45px;
 }
+/* Section Badge */
+.find-parking-header .section-badge {
+    display: inline-block;
+    padding: 8px 18px;
+    margin-bottom: 18px;
+
+    background: #e8f7ef;
+    color: #16a34a;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
