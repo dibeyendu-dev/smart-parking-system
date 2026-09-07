@@ -6,12 +6,14 @@
     background: #f8fafc;
     box-sizing: border-box;
 }
+
 /* Header */
 .find-parking-header {
     text-align: center;
     max-width: 750px;
     margin: 0 auto 45px;
 }
+
 /* Section Badge */
 .find-parking-header .section-badge {
     display: inline-block;
@@ -25,4 +27,15 @@
 
     font-size: 14px;
     font-weight: 600;
+}
+
+/* Main Heading */
+.find-parking-header h1 {
+    margin: 0;
+
+    font-size: 44px;
+    line-height: 1.2;
+
+    color: #111827;
+    font-weight: 700;
 }
