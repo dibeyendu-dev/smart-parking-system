@@ -1,0 +1,8 @@
+/* Main Page */
+.find-parking-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 7%;
+    background: #f8fafc;
+    box-sizing: border-box;
+}
