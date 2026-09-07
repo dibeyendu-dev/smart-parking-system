@@ -54,3 +54,26 @@
 
     color: #343539;
 }
+/* ======================================== SEARCH SECTION ======================================== */
+
+.find-parking-search {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto 45px;
+
+    padding: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+
+    box-sizing: border-box;
+}
