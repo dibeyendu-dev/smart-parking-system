@@ -39,7 +39,18 @@
     color: #111827;
     font-weight: 700;
 }
+
 /* Heading Highlight */
 .find-parking-header h1 strong {
     color: #16a34a;
+}
+
+/* Header Paragraph */
+.find-parking-header p {
+    margin-top: 15px;
+
+    font-size: 18px;
+    line-height: 1.5;
+
+    color: #343539;
 }
