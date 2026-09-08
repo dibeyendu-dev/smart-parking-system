@@ -270,3 +270,10 @@
 .section-heading h2 strong {
     color: #16a34a;
 }
+/* Section Paragraph */
+.section-heading p {
+    margin: 10px 0 0;
+    color: #131515;
+    font-size: 15px;
+    line-height: 1.6;
+}
