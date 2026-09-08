@@ -299,3 +299,58 @@
     transform: translateY(-3px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
+/* Parking Header */
+.parking-result-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Parking Name */
+.parking-result-header h3 {
+    margin: 0 0 8px;
+    font-size: 21px;
+    color: #111827;
+}
+
+/* Parking Location */
+.parking-result-header p {
+    margin: 0;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* Rating */
+.parking-rating {
+    padding: 7px 12px;
+    background: #fff7ed;
+    color: #ea580c;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Availability Row */
+.parking-availability {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 13px;
+}
+
+/* Available Text */
+.parking-availability span:first-child {
+    color: #16a34a;
+    font-weight: 600;
+}
+
+/* Total Slots */
+.parking-availability span:last-child {
+    color: #6b7280;
+}
