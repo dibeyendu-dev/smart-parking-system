@@ -244,3 +244,8 @@
     max-width: 1100px;
     margin: 0 auto 50px;
 }
+
+/* Section Heading */
+.section-heading {
+    margin-bottom: 25px;
+}
