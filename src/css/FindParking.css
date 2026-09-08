@@ -257,3 +257,9 @@
     font-weight: 600;
     color: #16a34a;
 }
+/* Section Title */
+.section-heading h2 {
+    margin: 0;
+    font-size: 30px;
+    color: #111827;
+}
