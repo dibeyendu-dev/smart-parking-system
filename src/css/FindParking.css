@@ -213,3 +213,9 @@
     font-size: 25px;
     margin-top: -10px;
 }
+/* Vehicle Name */
+.price-options > div strong {
+    flex: 1;
+    font-size: 18px;
+    color: #374151;
+}
