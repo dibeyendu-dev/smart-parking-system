@@ -249,3 +249,11 @@
 .section-heading {
     margin-bottom: 25px;
 }
+/* Small Heading */
+.section-heading > span {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #16a34a;
+}
