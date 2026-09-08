@@ -283,3 +283,14 @@
     grid-template-columns: 1fr;
     gap: 25px;
 }
+/* Parking Card */
+.parking-result-card {
+    width: 100%;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
