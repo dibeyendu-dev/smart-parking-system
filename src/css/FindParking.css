@@ -235,3 +235,12 @@
     transform: translateY(-3px);
     box-shadow: 0 6px 18px rgba(22, 163, 74, 0.08);
 }
+
+/* ======================================== FIND PARKING - PART 3  Parking Results + Parking Card ======================================= */
+
+/* Parking Results Section */
+.parking-results {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 50px;
+}
