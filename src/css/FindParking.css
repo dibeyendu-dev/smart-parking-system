@@ -228,3 +228,10 @@
     font-weight: 700;
     color: #16a34a;
 }
+
+/* Hover Effect */
+.price-options>div:hover {
+    border-color: #16a34a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(22, 163, 74, 0.08);
+}
