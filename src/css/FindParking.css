@@ -208,14 +208,23 @@
     border-radius: 12px;
     transition: 03s ease;
 }
+
 /* Vehicle Icon */
-.price-options > div > span:first-child{
+.price-options>div>span:first-child {
     font-size: 25px;
     margin-top: -10px;
 }
+
 /* Vehicle Name */
-.price-options > div strong {
+.price-options>div strong {
     flex: 1;
     font-size: 18px;
     color: #374151;
+}
+
+/* Price */
+.price-options>div>span:last-child {
+    font-size: 14px;
+    font-weight: 700;
+    color: #16a34a;
 }
