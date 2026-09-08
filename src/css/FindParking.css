@@ -249,17 +249,24 @@
 .section-heading {
     margin-bottom: 25px;
 }
+
 /* Small Heading */
-.section-heading > span {
+.section-heading>span {
     display: inline-block;
     margin-bottom: 8px;
     font-size: 14px;
     font-weight: 600;
     color: #16a34a;
 }
+
 /* Section Title */
 .section-heading h2 {
     margin: 0;
     font-size: 30px;
     color: #111827;
+}
+
+/* Title Highlight */
+.section-heading h2 strong {
+    color: #16a34a;
 }
