@@ -294,3 +294,8 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
     transition: 0.3s ease;
 }
+/* Card Hover */
+.parking-result-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
