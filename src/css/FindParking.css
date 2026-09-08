@@ -203,8 +203,13 @@
     align-items: center;
     gap: 13px;
     padding: 16px 18px;
-    background: #dfe2e6;
+    background: #f2f3f4;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
     transition: 03s ease;
+}
+/* Vehicle Icon */
+.price-options > div > span:first-child{
+    font-size: 25px;
+    margin-top: -10px;
 }
