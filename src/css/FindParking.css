@@ -162,3 +162,21 @@
 .search-input input[readonly] {
     cursor: default;
 }
+/* ======================================= FIND PARKING - PART 2 Parking Price Section ======================================== */
+/* Price Section */
+.vehicle-price-info {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto 50px;
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+}
