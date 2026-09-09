@@ -434,3 +434,8 @@
 
     color: #e10f0f;
 }
+/* Price Amount */
+.parking-result-price strong {
+    font-size: 22px;
+    color: #16a34a;
+}
