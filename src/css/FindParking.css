@@ -391,3 +391,9 @@
 .parking-slot span {
     font-size: 11px;
 }
+/* Available Slot */
+.parking-slot.available {
+    border-color: #86efac;
+    background: #f0fdf4;
+    color: #15803d;
+}
