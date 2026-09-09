@@ -629,3 +629,165 @@
         width: 100%;
     }
 }
+
+/* Page Smooth Animation */
+.find-parking-page {
+    animation: pageFadeIn 0.6s ease;
+}
+
+/* Header Animation */
+.find-parking-header {
+    animation: slideDown 0.6s ease;
+}
+
+/* Search Box Hover */
+.find-parking-search {
+    transition: 0.3s ease;
+}
+.find-parking-search:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Search Input Focus */
+.search-input {
+    transition: 0.3s ease;
+}
+.search-input:focus-within {
+    border-color: #16a34a;
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.08);
+}
+
+/* Parking Card Animation */
+.parking-result-card {
+    animation: cardFadeIn 0.6s ease;
+    transition: 0.3s ease;
+}
+.parking-result-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Parking Slot Hover */
+.parking-slot.available {
+    transition: 0.25s ease;
+}
+.parking-slot.available:hover {
+    transform: translateY(-3px);
+    border-color: #16a34a;
+    background: #f0fdf4;
+    box-shadow: 0 6px 15px rgba(22, 163, 74, 0.12);
+}
+
+/* Selected Slot */
+.parking-slot.selected {
+    background: #16a34a;
+    color: #ffffff;
+    border-color: #16a34a;
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(22, 163, 74, 0.2);
+}
+
+/* Occupied Slot */
+.parking-slot.occupied {
+    cursor: not-allowed;
+    opacity: 0.55;
+}
+
+/* Price Option Hover */
+.price-options > div {
+    transition: 0.3s ease;
+}
+.price-options > div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Rating */
+.parking-rating {
+    transition: 0.3s ease;
+}
+.parking-rating:hover {
+    transform: scale(1.05);
+}
+
+/* Selected Card Animation */
+.selected-parking-section {
+    animation: selectedSlideUp 0.5s ease;
+}
+
+/* Booking Button */
+.book-slot-btn {
+    transition: 0.3s ease;
+}
+.book-slot-btn:hover {
+    transform: translateY(-2px);
+}
+.book-slot-btn:active {
+    transform: translateY(0);
+}
+
+/* Animations */
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes cardFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes selectedSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Prevent Horizontal Overflow */
+.find-parking-page {
+    overflow-x: hidden;
+}
+
+/* Small Mobile Fix */
+@media (max-width: 400px) {
+    .parking-slots {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+    .parking-slot {
+        min-height: 60px;
+        padding: 8px;
+    }
+    .parking-slot strong {
+        font-size: 14px;
+    }
+    .parking-slot span {
+        font-size: 11px;
+    }
+    .find-parking-header h1 {
+        font-size: 28px;
+    }
+}
