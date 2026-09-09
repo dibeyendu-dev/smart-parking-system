@@ -420,3 +420,11 @@
     box-shadow: 0 6px 18px rgba(22, 163, 74, 0.25);
     transform: translateY(-2px);
 }
+/* Parking Price */
+.parking-result-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+     border-top: 1px solid #e5e7eb;
+}
