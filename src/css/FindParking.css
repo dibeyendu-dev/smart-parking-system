@@ -439,3 +439,10 @@
     font-size: 22px;
     color: #16a34a;
 }
+/* Price Per Hour */
+.parking-result-price strong span {
+    margin-left: 3px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0f0f10;
+}
