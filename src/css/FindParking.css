@@ -367,6 +367,7 @@
     gap: 12px;
     margin-bottom: 22px;
 }
+
 /* Common Slot */
 .parking-slot {
     min-height: 75px;
@@ -383,20 +384,24 @@
     font-family: inherit;
     transition: 0.25s ease;
 }
+
 /* Slot Number */
 .parking-slot strong {
     font-size: 17px;
 }
+
 /* Slot Status Text */
 .parking-slot span {
     font-size: 11px;
 }
+
 /* Available Slot */
 .parking-slot.available {
     border-color: #86efac;
     background: #f0fdf4;
     color: #15803d;
 }
+
 /* Available Hover */
 .parking-slot.available:hover {
     border-color: #16a34a;
@@ -404,6 +409,7 @@
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(22, 163, 74, 0.12);
 }
+
 /* Occupied Slot */
 .parking-slot.occupied {
     border-color: #fecaca;
@@ -412,6 +418,7 @@
     cursor: not-allowed;
     opacity: 0.75;
 }
+
 /* Selected Slot */
 .parking-slot.selected {
     border-color: #16a34a;
@@ -420,29 +427,205 @@
     box-shadow: 0 6px 18px rgba(22, 163, 74, 0.25);
     transform: translateY(-2px);
 }
+
 /* Parking Price */
 .parking-result-price {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 18px;
-     border-top: 1px solid #e5e7eb;
+    border-top: 1px solid #e5e7eb;
 }
+
 /* Price Label */
 .parking-result-price small {
     font-size: 17px;
 
     color: #e10f0f;
 }
+
 /* Price Amount */
 .parking-result-price strong {
     font-size: 22px;
     color: #16a34a;
 }
+
 /* Price Per Hour */
 .parking-result-price strong span {
     margin-left: 3px;
     font-size: 18px;
     font-weight: 500;
     color: #0f0f10;
+}
+
+/* Selected Parking Section */
+.selected-parking-section {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 50px;
+}
+
+/* Selected Parking Card */
+.selected-parking-card {
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #bbf7d0;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(22, 163, 74, 0.08);
+    box-sizing: border-box;
+}
+
+/* Selected Badge */
+.selected-badge {
+    display: inline-block;
+    padding: 7px 14px;
+    background: #dcfce7;
+    color: #15803d;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Selected Parking Name */
+.selected-parking-card h2 {
+    margin: 15px 0 8px;
+    font-size: 25px;
+    color: #111827;
+}
+
+/* Selected Location */
+.selected-parking-card>p {
+    margin: 0 0 25px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* Selected Details */
+.selected-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+/* Individual Detail */
+.selected-details>div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 15px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+/* Detail Label */
+.selected-details small {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* Detail Value */
+.selected-details strong {
+    font-size: 16px;
+    color: #111827;
+}
+
+/* Booking Button */
+.book-slot-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0 25px;
+    background: #16a34a;
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* Booking Button Hover */
+.book-slot-btn:hover {
+    background: #15803d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(22, 163, 74, 0.2);
+}
+
+/* ======================================== RESPONSIVE DESIGN ======================================== */
+/* Tablet */
+@media (max-width: 900px) {
+    .find-parking-page {
+        padding: 50px 5%;
+    }
+
+    .find-parking-search {
+        grid-template-columns: 1fr;
+    }
+
+    .price-options {
+        grid-template-columns: 1fr;
+    }
+
+    .parking-slots {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .selected-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .find-parking-page {
+        padding: 35px 20px;
+    }
+
+    .find-parking-header h1 {
+        font-size: 32px;
+    }
+
+    .find-parking-header p {
+        font-size: 14px;
+    }
+
+    .find-parking-search {
+        padding: 18px;
+    }
+
+    .vehicle-price-info {
+        padding: 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .parking-result-card {
+        padding: 18px;
+    }
+
+    .parking-result-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .parking-rating {
+        align-self: flex-start;
+    }
+
+    .parking-slots {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .selected-parking-card {
+        padding: 20px;
+    }
+
+    .book-slot-btn {
+        width: 100%;
+    }
 }
