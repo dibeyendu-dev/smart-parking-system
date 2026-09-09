@@ -428,3 +428,9 @@
     padding-top: 18px;
      border-top: 1px solid #e5e7eb;
 }
+/* Price Label */
+.parking-result-price small {
+    font-size: 17px;
+
+    color: #e10f0f;
+}
