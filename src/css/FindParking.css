@@ -367,3 +367,19 @@
     gap: 12px;
     margin-bottom: 22px;
 }
+/* Common Slot */
+.parking-slot {
+    min-height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #ffffff;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.25s ease;
+}
