@@ -387,3 +387,7 @@
 .parking-slot strong {
     font-size: 17px;
 }
+/* Slot Status Text */
+.parking-slot span {
+    font-size: 11px;
+}
