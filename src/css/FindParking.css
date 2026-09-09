@@ -270,6 +270,7 @@
 .section-heading h2 strong {
     color: #16a34a;
 }
+
 /* Section Paragraph */
 .section-heading p {
     margin: 10px 0 0;
@@ -277,12 +278,14 @@
     font-size: 15px;
     line-height: 1.6;
 }
+
 /* Parking Grid */
-.parking-results-grid{
+.parking-results-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
 }
+
 /* Parking Card */
 .parking-result-card {
     width: 100%;
@@ -294,11 +297,13 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
     transition: 0.3s ease;
 }
+
 /* Card Hover */
 .parking-result-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
+
 /* Parking Header */
 .parking-result-header {
     display: flex;
@@ -353,4 +358,12 @@
 /* Total Slots */
 .parking-availability span:last-child {
     color: #6b7280;
+}
+
+/* Parking Slots Container */
+.parking-slots {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    margin-bottom: 22px;
 }
