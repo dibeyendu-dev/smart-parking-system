@@ -383,3 +383,7 @@
     font-family: inherit;
     transition: 0.25s ease;
 }
+/* Slot Number */
+.parking-slot strong {
+    font-size: 17px;
+}
