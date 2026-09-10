@@ -80,6 +80,11 @@
 
 .booking-details small {
     display: block;
-    color: #242527;
+    color: #4b4e56;
+    font-size: 14px;
     margin-bottom: 8px;
+}
+.booking-details strong {
+    color: #172033;
+    font-size: 18px;
 }
