@@ -27,3 +27,8 @@
 .booking-header h1 strong {
     color: #16a34a;
 }
+.booking-header p {
+    color: #64748b;
+    font-size: 16px;
+    margin-top: 12px;
+}
