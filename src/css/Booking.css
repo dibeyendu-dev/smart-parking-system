@@ -63,7 +63,7 @@
     margin: 20px 0 8px;
 }
 .booking-summary p {
-    color: #64748b;
+    color: #879cb9;
     margin-bottom: 25px;
 }
 /* Booking Details */
@@ -74,6 +74,12 @@
 }
 .booking-details div {
     padding: 15px;
-    background: #f8fafc;
+    background: #e8eeef;
     border-radius: 12px;
+}
+
+.booking-details small {
+    display: block;
+    color: #242527;
+    margin-bottom: 8px;
 }
