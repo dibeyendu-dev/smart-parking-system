@@ -41,3 +41,10 @@
     gap: 30px;
     align-items: start;
 }
+/* Selected Parking */
+.booking-summary {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
