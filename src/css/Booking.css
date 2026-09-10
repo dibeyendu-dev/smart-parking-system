@@ -66,3 +66,9 @@
     color: #64748b;
     margin-bottom: 25px;
 }
+/* Booking Details */
+.booking-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
