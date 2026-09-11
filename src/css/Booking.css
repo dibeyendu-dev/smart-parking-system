@@ -223,3 +223,28 @@
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
+.booking-empty h1 {
+    color: #172033;
+    margin: 15px 0 10px;
+}
+
+.booking-empty p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.back-parking-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 10px;
+    background: #16a34a;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.back-parking-btn:hover {
+    background: #15803d;
+    transform: translateY(-2px);
+}
