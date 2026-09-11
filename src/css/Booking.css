@@ -140,3 +140,18 @@
     border-radius: 13px;
     background-color: #e8f8ef;
 }
+.booking-total span{
+    color: #172033;
+    font-weight: 600;
+}
+.booking-total strong{
+    color: #16a34a;
+    font-size: 24px;
+}
+/* Booking Action */
+.booking-actions{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 26px;
+}
