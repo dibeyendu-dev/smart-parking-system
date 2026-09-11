@@ -130,3 +130,13 @@
     background: #ffffff;
     box-shadow: 0 0 0 30px rgba(22, 163, 74, 0.08);
 }
+/* Booking Total */
+.booking-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 13px;
+    background-color: #e8f8ef;
+}
