@@ -167,3 +167,8 @@
     cursor: pointer;
     transition: 0.3s;
 }
+.cancel-booking-btn{
+    border: 1px solid #e2e8f0;
+    color: black;
+    background: #e3515fc0;
+}
