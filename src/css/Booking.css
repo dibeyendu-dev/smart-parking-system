@@ -111,3 +111,16 @@
     font-weight: 600;
     margin-bottom: 8px;
 }
+.booking-field input, 
+.booking-field select{
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: #f8fafc;
+    color: #172033;
+    font-size: 15px;
+    margin-top: 10px;
+    outline: none;
+    transition: 0.3s;
+}
