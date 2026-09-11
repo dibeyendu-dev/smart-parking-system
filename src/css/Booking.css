@@ -195,7 +195,7 @@
 .cancel-booking-btn {
     border: 1px solid #e2e8f0;
     color: black;
-    background:#70f5ee;
+    background: #70f5ee;
 }
 
 .cancel-booking-btn:hover {
@@ -223,6 +223,7 @@
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
+
 .booking-empty h1 {
     color: #172033;
     margin: 15px 0 10px;
@@ -247,4 +248,58 @@
 .back-parking-btn:hover {
     background: #15803d;
     transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .booking-page {
+        padding: 80px 5%;
+    }
+
+    .booking-header h1 {
+        font-size: 32px;
+    }
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-details {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-page {
+        padding: 60px 4%;
+    }
+
+    .booking-header h1 {
+        font-size: 28px;
+    }
+
+    .booking-header p {
+        font-size: 14px;
+    }
+
+    .booking-summary,
+    .booking-form {
+        padding: 22px;
+    }
+
+    .booking-summary h2 {
+        font-size: 22px;
+    }
+
+    .booking-form h2 {
+        font-size: 21px;
+    }
+
+    .booking-total strong {
+        font-size: 21px;
+    }
 }
