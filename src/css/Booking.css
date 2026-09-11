@@ -124,3 +124,9 @@
     outline: none;
     transition: 0.3s;
 }
+.booking-field input:focus, 
+.booking-field select:focus{
+    border-color: #16a34a;
+    background: #ffffff;
+    box-shadow: 0 0 0 30px rgba(22, 163, 74, 0.08);
+}
