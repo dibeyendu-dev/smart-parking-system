@@ -27,7 +27,7 @@ function Home() {
 
           <div className="hero-buttons">
 
-            <Link to="/search" className="hero-primary-btn">
+            <Link to="/find-parking" className="hero-primary-btn">
               Find Parking
             </Link>
 
@@ -283,12 +283,11 @@ function Home() {
           {/* Search Button */}
 
           <Link
-            to="/search"
+            to="/find-parking"
             className="search-button"
           >
             Search Parking
           </Link>
-
         </div>
 
       </section>
@@ -397,7 +396,7 @@ function Home() {
 
 
                 <Link
-                  to="/search"
+                  to="/find-parking"
                   className="view-parking-btn"
                 >
                   View Parking
@@ -417,7 +416,7 @@ function Home() {
         <div className="featured-action">
 
           <Link
-            to="/search"
+            to="/find-parking"
             className="view-all-parking"
           >
             View Parking →
@@ -597,7 +596,7 @@ function Home() {
             </p>
 
             <Link
-              to="/search"
+              to="/find-parking"
               className="feature-link"
             >
               Find Parking →
@@ -624,7 +623,7 @@ function Home() {
             </p>
 
             <Link
-              to="/search"
+              to="/find-parking"
               className="feature-link"
             >
               Check Availability →
@@ -651,7 +650,7 @@ function Home() {
             </p>
 
             <Link
-              to="/search"
+              to="/find-parking"
               className="feature-link"
             >
               Book a Spot →
@@ -678,7 +677,7 @@ function Home() {
             </p>
 
             <Link
-              to="/search"
+              to="/find-parking"
               className="feature-link"
             >
               View Pricing →
@@ -705,7 +704,7 @@ function Home() {
             </p>
 
             <Link
-              to="/search"
+              to="/find-parking"
               className="feature-link"
             >
               View Parking →
@@ -1025,7 +1024,7 @@ function Home() {
           <div className="cta-actions">
 
             <Link
-              to="/search"
+              to="/find-parking"
               className="cta-primary-btn"
             >
               Find Parking →

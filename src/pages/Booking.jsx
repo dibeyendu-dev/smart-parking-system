@@ -1,14 +1,16 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./../css/Booking.css";
 
 function Booking() {
     const { state } = useLocation();
-    const selectedSlot = state;
+    const navigate = useNavigate();
 
     const [date, setDate] = useState("");
     const [time, setTime] = useState("");
     const [duration, setDuration] = useState(1);
+
+    const selectedSlot = state;
 
     if (!selectedSlot) {
         return (
@@ -26,12 +28,38 @@ function Booking() {
 
     const total = selectedSlot.price * duration;
 
+    const createBooking = () => {
+        return {
+            areaName: selectedSlot.areaName,
+            location: selectedSlot.location,
+            slotId: selectedSlot.slotId,
+            vehicle: selectedSlot.vehicle,
+            price: selectedSlot.price,
+            date: date,
+            time: time,
+            duration: duration,
+            total: total,
+            status: "Confirmed"
+        };
+    };
+
     const handleBooking = (e) => {
         e.preventDefault();
 
-        alert(
-            `Booking Confirmed!\n\nSlot: ${selectedSlot.slotId}\nVehicle: ${selectedSlot.vehicle}\nTotal: ₹${total}`
+        const booking = createBooking();
+
+        // Temporary storage - later this function will call backend API
+        const bookings =
+            JSON.parse(localStorage.getItem("bookings")) || [];
+
+        localStorage.setItem(
+            "bookings",
+            JSON.stringify([...bookings, booking])
         );
+
+        alert("Booking Confirmed!");
+
+        navigate("/my-bookings");
     };
 
     return (
@@ -100,7 +128,9 @@ function Booking() {
                         <label>Duration</label>
                         <select
                             value={duration}
-                            onChange={(e) => setDuration(Number(e.target.value))}
+                            onChange={(e) =>
+                                setDuration(Number(e.target.value))
+                            }
                         >
                             <option value="1">1 Hour</option>
                             <option value="2">2 Hours</option>
@@ -117,11 +147,17 @@ function Booking() {
                     </div>
 
                     <div className="booking-actions">
-                        <Link to="/find-parking" className="cancel-booking-btn">
+                        <Link
+                            to="/find-parking"
+                            className="cancel-booking-btn"
+                        >
                             ← Back
                         </Link>
 
-                        <button type="submit" className="confirm-booking-btn">
+                        <button
+                            type="submit"
+                            className="confirm-booking-btn"
+                        >
                             Confirm Booking →
                         </button>
                     </div>
