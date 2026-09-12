@@ -14,3 +14,10 @@
     color: #172033;
     margin: 10px 0;
 }
+.my-bookings-header h1 strong{
+    color: #16a34a;
+}
+.my-bookings-header p{
+    color: #222324;
+    font-size :17px; ;
+}
