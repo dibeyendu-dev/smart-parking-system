@@ -1,11 +1,11 @@
-/* My Booking Page */
+/* My Bookings Page */
 .my-bookings-page {
     min-height: 100vh;
     padding: 100px 7%;
     background: #f8fafc;
 }
 
-/* Haeader */
+/* Header */
 .my-bookings-header {
     text-align: center;
     margin-bottom: 50px;
@@ -24,29 +24,37 @@
 .my-bookings-header p {
     color: #222324;
     font-size: 17px;
-    ;
+    margin: 0;
 }
 
-/* Booking container */
+/* Booking Container */
 .bookings-container {
     width: 100%;
 }
 
-/* Booking card */
+/* Booking Card */
 .booking-card {
     max-width: 1000px;
     margin: 0 auto 25px;
     padding: 31px;
     background: #cbe9e5;
+    border: 1px solid #b8ddd8;
     border-radius: 21px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
 }
 
-/* Booking card Header */
+.booking-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Booking Card Header */
 .booking-card-header {
     display: flex;
     justify-content: space-between;
-    gap: 21px;
     align-items: center;
+    gap: 21px;
     margin-bottom: 25px;
 }
 
@@ -61,7 +69,7 @@
     margin: 0;
 }
 
-/* Booking status */
+/* Booking Status */
 .booking-status {
     padding: 8px 15px;
     background: #18e9c994;
@@ -69,6 +77,7 @@
     color: #16a34a;
     font-size: 17px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 /* Booking Information */
@@ -77,8 +86,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     padding: 20px 0;
-    border-top: 1px solid #e2e8f0;
-    border-bottom: 1px solid #e2e8f0;
+    border-top: 1px solid #b8ddd8;
+    border-bottom: 1px solid #b8ddd8;
 }
 
 .booking-info div {
@@ -86,6 +95,13 @@
     background: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.booking-info div:hover {
+    transform: translateY(-2px);
+    background: #f0fdf4;
+    border-color: #bbf7d0;
 }
 
 .booking-info small {
@@ -119,12 +135,17 @@
     transform: translateY(-2px);
 }
 
+.new-booking-btn:active {
+    transform: translateY(0);
+}
+
 /* No Booking */
 .no-booking {
     max-width: 600px;
     margin: 40px auto;
     padding: 50px 30px;
     background: #ffffff;
+    border: 1px solid #e2e8f0;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
@@ -158,6 +179,11 @@
     background: #15803d;
     transform: translateY(-2px);
 }
+
+.no-booking a:active {
+    transform: translateY(0);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .my-bookings-page {
@@ -202,6 +228,10 @@
 
     .booking-card-header h2 {
         font-size: 21px;
+    }
+
+    .booking-status {
+        font-size: 14px;
     }
 
     .booking-info {
