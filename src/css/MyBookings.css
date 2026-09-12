@@ -158,3 +158,69 @@
     background: #15803d;
     transform: translateY(-2px);
 }
+/* Responsive */
+@media (max-width: 768px) {
+    .my-bookings-page {
+        padding: 80px 5%;
+    }
+
+    .my-bookings-header h1 {
+        font-size: 34px;
+    }
+
+    .booking-card {
+        padding: 22px;
+    }
+
+    .booking-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .booking-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .my-bookings-page {
+        padding: 70px 4%;
+    }
+
+    .my-bookings-header h1 {
+        font-size: 28px;
+    }
+
+    .my-bookings-header p {
+        font-size: 14px;
+    }
+
+    .booking-card {
+        padding: 18px;
+        border-radius: 15px;
+    }
+
+    .booking-card-header h2 {
+        font-size: 21px;
+    }
+
+    .booking-info {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .booking-info div {
+        padding: 12px;
+    }
+
+    .new-booking-btn,
+    .no-booking a {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .no-booking {
+        padding: 40px 20px;
+    }
+}
