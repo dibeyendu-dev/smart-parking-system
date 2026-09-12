@@ -99,3 +99,16 @@
     color: #172033;
     font-size: 15px;
 }
+/* New Booking Button */
+.new-booking-btn {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 12px 20px;
+    background: #16a34a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
