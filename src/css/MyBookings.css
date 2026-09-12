@@ -60,12 +60,42 @@
     color: #f35889;
     margin: 0;
 }
+
 /* Booking status */
-.booking-status{
+.booking-status {
     padding: 8px 15px;
     background: #18e9c994;
     border-radius: 21px;
     color: #16a34a;
     font-size: 17px;
     font-weight: 600;
+}
+
+/* Booking Information */
+.booking-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px 0;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.booking-info div {
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.booking-info small {
+    display: block;
+    margin-bottom: 6px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.booking-info strong {
+    color: #172033;
+    font-size: 15px;
 }
