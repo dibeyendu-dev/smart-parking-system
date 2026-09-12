@@ -1,0 +1,11 @@
+/* My Booking Page */
+.my-bookings-page{
+    min-height: 100vh;
+    padding: 100px 7%;
+    background: #f8fafc;
+}
+/* Haeader */
+.my-bookings-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
