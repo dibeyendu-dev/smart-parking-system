@@ -99,6 +99,7 @@
     color: #172033;
     font-size: 15px;
 }
+
 /* New Booking Button */
 .new-booking-btn {
     display: inline-block;
@@ -111,4 +112,49 @@
     font-size: 14px;
     font-weight: 600;
     transition: 0.3s ease;
+}
+
+.new-booking-btn:hover {
+    background: #15803d;
+    transform: translateY(-2px);
+}
+
+/* No Booking */
+.no-booking {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 50px 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.no-booking h2 {
+    margin: 0 0 10px;
+    color: #172033;
+    font-size: 25px;
+}
+
+.no-booking p {
+    margin: 0 0 25px;
+    color: #64748b;
+    font-size: 15px;
+}
+
+.no-booking a {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #16a34a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.no-booking a:hover {
+    background: #15803d;
+    transform: translateY(-2px);
 }
