@@ -68,3 +68,11 @@
     outline: none;
     transition: 0.3 ease;
 }
+.login-field input::placeholder{
+    color: #94a3b8;
+}
+.login-field input:focus{
+    background: #ffffff;
+    border-color: #16a34a;
+    box-shadow:5px 12px 20px rgba(45, 233, 236, 0.445);
+}
