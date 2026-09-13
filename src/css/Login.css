@@ -27,9 +27,18 @@
     display: inline-block;
     padding: 9px 17px;
     background: #e8f8ef;
-    border: 1px solid #bbf7d0;
+    border: 1px solid #0aeae6;
     border-radius: 21px;
     color: #16a34a;
     font-size: 14px;
     font-weight: 600;
+}
+.login-container{
+    max-width: 501px;
+    margin: 0 auto;
+    padding: 36px;
+    background: #ffffff;
+    border: 1px solid #5294ea;
+    border-radius: 21px;
+    box-shadow: 0 10px 30px rgba(31, 226, 181, 0.445);
 }
