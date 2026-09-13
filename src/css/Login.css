@@ -17,3 +17,8 @@
 .login-header h1 strong{
     color: #16a34a;
 }
+.login-header p{
+    margin: 0;
+    color: #64748b;
+    font-size: 16px;
+}
