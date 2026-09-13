@@ -135,3 +135,45 @@
     color: #15803d;
     text-decoration: underline;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .register-page {
+        padding: 80px 5%;
+    }
+
+    .register-header h1 {
+        font-size: 36px;
+    }
+
+    .register-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-page {
+        padding: 70px 4%;
+    }
+
+    .register-header {
+        margin-bottom: 30px;
+    }
+
+    .register-header h1 {
+        font-size: 30px;
+    }
+
+    .register-header p {
+        font-size: 14px;
+    }
+
+    .register-container {
+        padding: 25px 20px;
+        border-radius: 16px;
+    }
+
+    .register-submit-btn {
+        padding: 12px 18px;
+    }
+}
