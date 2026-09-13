@@ -6,6 +6,7 @@ import FindParking from "./pages/FindParking";
 import Booking from "./pages/Booking";
 import MyBookings from "./pages/MyBookings";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/booking" element={<Booking />} />
                 <Route path="/my-bookings" element={<MyBookings />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
             </Routes>
         </>
     );
