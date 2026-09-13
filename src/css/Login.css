@@ -49,3 +49,10 @@
 .login-field{
     margin-bottom: 21px;
 }
+.login-field label{
+    display: block;
+    margin-bottom: 9px;
+    color: #172033;
+    font-size: 15px;
+    font-weight: 600;
+}
