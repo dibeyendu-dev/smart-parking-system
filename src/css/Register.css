@@ -32,7 +32,7 @@
     display: inline-block;
     padding: 9px 17px;
     background: #e8f8ef;
-    border: 1px solid #bbf7d0;
+    border: 1px solid #0aeae6;
     border-radius: 21px;
     color: #16a34a;
     font-size: 14px;
@@ -87,5 +87,51 @@
 .register-field input:focus {
     background: #ffffff;
     border-color: #16a34a;
-     box-shadow: 5px 10px 15px rgba(117, 228, 230, 0.445);
+    box-shadow: 5px 10px 15px rgba(117, 228, 230, 0.445);
+}
+
+/* Register Button */
+.register-submit-btn {
+    width: 100%;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #16a34a;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.register-submit-btn:hover {
+    background: #15803d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(22, 163, 74, 0.2);
+}
+
+.register-submit-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Login Text */
+.login-text {
+    margin: 22px 0 0;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.login-text a {
+    margin-left: 5px;
+    color: #16a34a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.login-text a:hover {
+    color: #15803d;
+    text-decoration: underline;
 }
