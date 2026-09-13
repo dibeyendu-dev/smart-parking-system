@@ -171,3 +171,51 @@
     color: #15803d;
     text-decoration: underline;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .login-page {
+        padding: 80px 5%;
+    }
+
+    .login-header h1 {
+        font-size: 36px;
+    }
+
+    .login-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-page {
+        padding: 70px 4%;
+    }
+
+    .login-header {
+        margin-bottom: 30px;
+    }
+
+    .login-header h1 {
+        font-size: 30px;
+    }
+
+    .login-header p {
+        font-size: 14px;
+    }
+
+    .login-container {
+        padding: 25px 20px;
+        border-radius: 16px;
+    }
+
+    .login-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .login-submit-btn {
+        padding: 12px 18px;
+    }
+}
