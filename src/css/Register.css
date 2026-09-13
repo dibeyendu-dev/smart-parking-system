@@ -45,9 +45,9 @@
     margin: 0 auto;
     padding: 36px;
     background: #ffffff;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #73a9ef;
     border-radius: 21px;
-    box-shadow: 0 10px 30px rgba(22, 163, 74, 0.12);
+    box-shadow: 0 10px 30px rgba(31, 226, 181, 0.445);
 }
 
 /* Register Form */
@@ -65,4 +65,27 @@
     color: #172033;
     font-size: 15px;
     font-weight: 600;
+}
+
+.register-field input {
+    width: 100%;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    border: 1px solid #dbe3ea;
+    border-radius: 12px;
+    background: #f8fafc;
+    color: #172033;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.register-field input::placeholder {
+    color: #94a3b8;
+}
+
+.register-field input:focus {
+    background: #ffffff;
+    border-color: #16a34a;
+     box-shadow: 5px 10px 15px rgba(117, 228, 230, 0.445);
 }
