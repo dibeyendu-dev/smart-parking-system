@@ -49,3 +49,20 @@
     border-radius: 21px;
     box-shadow: 0 10px 30px rgba(22, 163, 74, 0.12);
 }
+
+/* Register Form */
+.register-form {
+    width: 100%;
+}
+
+.register-field {
+    margin-bottom: 20px;
+}
+
+.register-field label {
+    display: block;
+    margin-bottom: 9px;
+    color: #172033;
+    font-size: 15px;
+    font-weight: 600;
+}
