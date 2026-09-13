@@ -56,3 +56,15 @@
     font-size: 15px;
     font-weight: 600;
 }
+.login-field input{
+    width: 100%;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    border: 1px solid #dbe3ea;
+    border-radius: 12px;
+    background: #f8fafc;
+    color: #172033;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3 ease;
+}
