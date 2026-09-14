@@ -52,3 +52,8 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
     transition: 0.3s ease;
 }
+.how-step:hover {
+    transform: translateY(-5px);
+    border-color: #bbf7d0;
+    box-shadow: 0 14px 30px rgba(22, 163, 74, 0.1);
+}
