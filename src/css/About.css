@@ -97,3 +97,14 @@
     border-radius: 20px;
     text-align: center;
 }
+.about-cta h2 {
+    margin: 0 0 10px;
+    color: #172033;
+    font-size: 30px;
+}
+
+.about-cta p {
+    margin: 0 0 25px;
+    color: #40454d;
+    font-size: 15px;
+}
