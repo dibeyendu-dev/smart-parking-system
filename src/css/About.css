@@ -75,3 +75,15 @@
     font-size: 13px;
     font-weight: 700;
 }
+.how-step h2 {
+    margin: 0 0 10px;
+    color: #172033;
+    font-size: 20px;
+}
+
+.how-step p {
+    margin: 0;
+    color: #4a4f56;
+    font-size: 14px;
+    line-height: 1.6;
+}
