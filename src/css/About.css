@@ -43,3 +43,12 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
+.how-step {
+    padding: 30px 22px;
+    background: #ffffff;
+    border: 1px solid #11dede;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
