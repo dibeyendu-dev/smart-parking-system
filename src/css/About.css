@@ -119,3 +119,13 @@
     font-weight: 600;
     transition: 0.3s ease;
 }
+.about-cta-btn:hover {
+    background: #47d0c7;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(22, 163, 74, 0.2);
+}
+
+.about-cta-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
