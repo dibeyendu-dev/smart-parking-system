@@ -19,3 +19,8 @@
 .about-header h1 strong {
     color: #16a34a;
 }
+.about-header p {
+    margin: 0;
+    color: #64748b;
+    font-size: 16px;
+}
