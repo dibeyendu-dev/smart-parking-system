@@ -108,3 +108,14 @@
     color: #40454d;
     font-size: 15px;
 }
+.about-cta-btn {
+    display: inline-block;
+    padding: 13px 22px;
+    background: #16a34a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
