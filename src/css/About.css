@@ -68,3 +68,10 @@
     border-radius: 15px;
     color: #16a34a;
 }
+.how-step > span {
+    display: block;
+    margin-bottom: 8px;
+    color: #127974;
+    font-size: 13px;
+    font-weight: 700;
+}
