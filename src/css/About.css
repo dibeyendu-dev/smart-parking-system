@@ -57,3 +57,14 @@
     border-color: #bbf7d0;
     box-shadow: 0 14px 30px rgba(22, 163, 74, 0.1);
 }
+.how-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a5eadb;
+    border-radius: 15px;
+    color: #16a34a;
+}
