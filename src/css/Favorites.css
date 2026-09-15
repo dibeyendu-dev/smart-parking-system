@@ -82,3 +82,23 @@
     background: #ffe4e6;
     border-color: #fda4af;
 }
+/* Favorite Title */
+.favorite-card h2 {
+    margin: 0 0 10px;
+    color: #172033;
+    font-size: 25px;
+}
+
+/* Favorite Location */
+.favorite-location {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.favorite-location svg {
+    color: #16a34a;
+}
