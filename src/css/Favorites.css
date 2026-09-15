@@ -34,3 +34,9 @@
     font-size: 14px;
     font-weight: 600;
 }
+/* Favorites Container */
+.favorites-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
