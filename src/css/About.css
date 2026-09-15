@@ -129,3 +129,17 @@
     transform: translateY(0);
     box-shadow: none;
 }
+/* Responsive */
+@media (max-width: 900px) {
+    .about-page {
+        padding: 80px 5%;
+    }
+
+    .how-it-works {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-header h1 {
+        font-size: 36px;
+    }
+}
