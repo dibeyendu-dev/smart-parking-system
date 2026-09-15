@@ -65,3 +65,20 @@
     border-radius: 14px;
     color: #16a34a;
 }
+/* Remove Favorite Button */
+.remove-favorite-btn {
+    padding: 9px 15px;
+    border: 1px solid #fecdd3;
+    border-radius: 9px;
+    background: #fff1f2;
+    color: #e11d48;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.remove-favorite-btn:hover {
+    background: #ffe4e6;
+    border-color: #fda4af;
+}
