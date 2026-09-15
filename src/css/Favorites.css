@@ -47,3 +47,21 @@
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
+/* Favorite Card Top */
+.favorite-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.favorite-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8f8ef;
+    border-radius: 14px;
+    color: #16a34a;
+}
