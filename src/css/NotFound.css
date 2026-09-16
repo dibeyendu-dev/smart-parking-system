@@ -39,3 +39,16 @@
     color: #161618;
     font-size: 18px;
 }
+/* Back To Home Button */
+.not-found-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 22px;
+    background: #16a34a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
