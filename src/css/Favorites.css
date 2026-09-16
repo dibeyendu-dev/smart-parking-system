@@ -177,4 +177,49 @@
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 480px) {
+    .favorites-page {
+        padding: 70px 4%;
+    }
 
+    .favorites-header {
+        margin-bottom: 35px;
+    }
+
+    .favorites-header h1 {
+        font-size: 30px;
+    }
+
+    .favorites-header p {
+        font-size: 14px;
+    }
+
+    .favorite-card {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .favorite-card h2 {
+        font-size: 22px;
+    }
+
+    .favorite-card-top {
+        margin-bottom: 18px;
+    }
+
+    .favorite-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .favorite-book-btn {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .remove-favorite-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
