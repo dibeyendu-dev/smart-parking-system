@@ -57,3 +57,7 @@
     transform: translateY(-2px);
     box-shadow: 0 8px 18px rgba(22, 163, 74, 0.2);
 }
+.not-found-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
