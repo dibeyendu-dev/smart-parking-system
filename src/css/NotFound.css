@@ -8,3 +8,14 @@
     box-sizing: border-box;
     background: #f8fafc;
 }
+/* Not Found Container */
+.not-found-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 55px 35px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 21px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
