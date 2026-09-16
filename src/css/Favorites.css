@@ -102,3 +102,10 @@
 .favorite-location svg {
     color: #16a34a;
 }
+/* Favorite Details */
+.favorite-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 25px;
+}
