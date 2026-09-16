@@ -143,3 +143,8 @@
     font-weight: 600;
     transition: 0.3s ease;
 }
+.favorite-book-btn:hover {
+    background: #15803d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(22, 163, 74, 0.2);
+}
