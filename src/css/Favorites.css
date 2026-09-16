@@ -128,3 +128,6 @@
     border-color: #bbf7d0;
     transform: translateY(-2px);
 }
+.favorite-details svg {
+    color: #16a34a;
+}
