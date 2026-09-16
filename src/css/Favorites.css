@@ -123,3 +123,8 @@
     font-weight: 600;
     transition: 0.3s ease;
 }
+.favorite-details div:hover {
+    background: #e8f8ef;
+    border-color: #bbf7d0;
+    transform: translateY(-2px);
+}
