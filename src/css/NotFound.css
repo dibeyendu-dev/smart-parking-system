@@ -61,3 +61,61 @@
     transform: translateY(0);
     box-shadow: none;
 }
+/* Final Polish */
+.not-found-container {
+    transition: 0.3s ease;
+}
+
+.not-found-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .not-found-page {
+        padding: 80px 5%;
+    }
+
+    .not-found-container {
+        padding: 45px 30px;
+    }
+
+    .not-found-number {
+        font-size: 70px;
+    }
+
+    .not-found-container h1 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 480px) {
+    .not-found-page {
+        padding: 70px 4%;
+    }
+
+    .not-found-container {
+        padding: 40px 20px;
+        border-radius: 16px;
+    }
+
+    .not-found-number {
+        font-size: 60px;
+    }
+
+    .not-found-container h1 {
+        font-size: 24px;
+    }
+
+    .not-found-container p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .not-found-btn {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
