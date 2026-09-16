@@ -109,3 +109,17 @@
     gap: 12px;
     margin-top: 25px;
 }
+.favorite-details div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 13px 10px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    color: #172033;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
