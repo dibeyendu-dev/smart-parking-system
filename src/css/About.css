@@ -56,6 +56,7 @@
     transform: translateY(-5px);
     border-color: #bbf7d0;
     box-shadow: 0 14px 30px rgba(22, 163, 74, 0.1);
+    border: 2px solid rgb(244, 90, 108);
 }
 .how-icon {
     width: 58px;
