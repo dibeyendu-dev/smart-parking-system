@@ -30,6 +30,7 @@ function Booking() {
 
     const createBooking = () => {
         return {
+            id: Date.now(),
             areaName: selectedSlot.areaName,
             location: selectedSlot.location,
             slotId: selectedSlot.slotId,
