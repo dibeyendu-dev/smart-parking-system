@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Favorites from "./pages/Favorites";
 import NotFound from "./pages/NotFound";
 import ForgotPassword from "./pages/ForgotPassword";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -29,6 +30,8 @@ function App() {
                 <Route path="*" element={<NotFound />} />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
             </Routes>
+
+            <Footer />
         </>
     );
 }
